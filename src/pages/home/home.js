@@ -150,7 +150,7 @@ const Home = () => {
                 <div className="scroll-trigger-dummy" style={{ height: "1px" }}></div>
             </section>
 
-            {/* <section className="huddler-section">
+            <section className="huddler-section">
                 <div className="huddler-heading">
                     <video
                         src="/assets/gifs/clicky1.mp4"
@@ -230,7 +230,7 @@ const Home = () => {
                 <div className="waitlist-button">
                     <button>Join The Waitlist</button>
                 </div>
-            </section> */}
+            </section>
         </div>
     );
 };
