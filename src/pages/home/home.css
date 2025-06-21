@@ -17,6 +17,12 @@
   box-sizing: border-box;
   /* padding: 2rem 1rem; */
 }
+.animated-paragraph span {
+  display: inline-block;
+  color: #ccc; /* light grey initially */
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
 
 @keyframes fadeSlideIn {
   0% {
@@ -63,7 +69,7 @@
 .hero-video {
   width: 100%;
   max-width: 100%;
-  height: 560px;
+  height: 590px;
   object-fit: cover;
   border-radius: 10px;
   margin-top: -10px;
@@ -90,11 +96,54 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #000000;
-  font-size: 36px;
+  font-size: 40px;
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
-  margin-left: 100px;
-  width: 820px;
-  margin-bottom: 13px;
+  margin-left: 60px;
+  width: 1000px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+.huddler-intro-section {
+  padding: 5rem 2rem;
+  text-align: center;
+  /* background-color: #f9f9f9; */
+}
+
+.intro-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  letter-spacing: 0.7px;
+}
+.highlight-huddler {
+  font-weight: 700;
+  color: orange;
+}
+
+.animated-paragraph-huddler span {
+  color: #ccc;
+  transition: color 0.3s ease;
+  margin: 0 4px;
+  display: inline-block;
+  white-space: nowrap;
+}
+.animated-paragraph-huddler {
+  margin-top: 90px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 102px;
+  letter-spacing: 0.7px;
+  text-align: left;
+  max-width: 80%;
+  margin-left: 350px;
+  /* display: flex; */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: -60px;
 }
 
 .hero-text p {
@@ -107,7 +156,7 @@
 p.fade-slide-in.delay-2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 37px;
   line-height: 120%;
   letter-spacing: 0%;
   margin: 0; /* centers block horizontally */
@@ -800,4 +849,12 @@ p.fade-slide-in.delay-2 {
   .purple-card4 {
     height: 150px;
   }
+}
+.image-box1 img.circles-image {
+  width: 100%;
+  margin-top: -50px;
+  margin-bottom: 16px;
+  /* max-width: 250px; */
+  transition: opacity 0.3s ease;
+  border-radius: 12px;
 }

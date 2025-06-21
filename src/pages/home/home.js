@@ -1,12 +1,15 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./home.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
     const sectionRef = useRef(null);
+    const [isHovered, setIsHovered] = useState(false);
+
 
     useEffect(() => {
         const section = sectionRef.current;
@@ -99,6 +102,37 @@ const Home = () => {
                 });
             }
         });
+        // Word fade-in animation on scroll
+        // Word-by-word scroll reveal
+        const wordSpans = section.querySelectorAll(".animated-paragraph span");
+
+        wordSpans.forEach((span, index) => {
+            ScrollTrigger.create({
+                trigger: section.querySelector(".animated-paragraph"),
+                start: `top+=${index * 55} bottom-=180`,
+                end: `top+=${(index + 1) * 55} bottom-=10`,
+                scrub: true,
+                onEnter: () => {
+                    gsap.to(span, {
+                        color: "#000", // dark black
+                        duration: 0.1,
+                        ease: "power1.out",
+                    });
+                },
+                onLeaveBack: () => {
+                    gsap.to(span, {
+                        color: "#ccc", // revert to grey on scroll up
+                        duration: 0.4,
+                        ease: "power1.inOut",
+                    });
+                },
+            });
+        });
+
+
+
+
+
     }, []);
 
     return (
@@ -124,12 +158,9 @@ const Home = () => {
                         India’s First{" "}
                         <span className="aurora-text">Collaborative Finance Platform</span>.
                     </h1>
-                    <p className="fade-slide-in delay-2">
-                        We Empower You To <strong>Pool Funds</strong>, Manage{" "}
-                        <strong>Investments</strong>, And <br />
-                        <strong>Access Exclusive Opportunities</strong> Previously Beyond
-                        Your Individual Reach.
-                    </p>
+
+
+
                 </div>
             </div>
 
@@ -149,6 +180,26 @@ const Home = () => {
                 ))}
                 <div className="scroll-trigger-dummy" style={{ height: "1px" }}></div>
             </section>
+            <section className="huddler-intro-section">
+                <h2 className="intro-heading">
+                    Introducing <span className="highlight-huddler">Huddler</span>
+                </h2>
+
+                <p className="animated-paragraph animated-paragraph-huddler">
+                    <span>We</span> <span>make</span> <span>it</span><br />
+                    <span>easy</span> <span>to</span> <span>grow</span><br />
+                    <span>wealth</span> <span>with</span> <span>people</span><br />
+                    <span>you</span> <span>trust,</span> <span>powered</span><br />
+                    <span>by</span> <span>smart</span> <span>tech,</span><br />
+                    <span>seamless</span> <span>structure,</span> <br /><span>and</span>
+                    <span>a</span> <span>setup</span><span>so</span><br />
+                    <span>smooth,</span> <span>it</span> <span>feels</span><br />
+                    <span>effortless.</span>
+                </p>
+
+
+            </section>
+
 
             <section className="huddler-section">
                 <div className="huddler-heading">
@@ -175,9 +226,18 @@ const Home = () => {
                             <em>stay accountable</em>, and <em>access credit</em> within
                             trusted groups.
                         </p>
-                        <div className="image-box1">
-                            <img src="/assets/images/bath.png" />
+                        <div
+                            className="image-box1"
+                            onMouseEnter={() => setIsHovered(true)}
+                            onMouseLeave={() => setIsHovered(false)}
+                        >
+                            <img
+                                src={isHovered ? "/assets/gifs/circlesgif.gif" : "/assets/images/bnw-circles-illustration.png"}
+                                alt="Huddler Circles"
+                                className="circles-image"
+                            />
                         </div>
+
                         <button className="huddler-btn">Explore Circles</button>
                     </div>
 

@@ -13,7 +13,7 @@ function Navbar() {
         <nav className="navbar">
             <div className="navbar-container">
                 <Link to="/" className="logo">
-                    <img src="assets/images/huddler_logo.png" alt="HUDDLER Logo" />
+                    <img src="/assets/images/huddler_logo.png" alt="HUDDLER Logo" />
                 </Link>
 
                 {/* Hamburger Icon */}
