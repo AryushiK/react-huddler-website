@@ -26,7 +26,7 @@
 
 .footer-links {
   display: flex;
-  gap: 90px;
+  gap: 60px;
   margin-right: 160px;
 }
 
@@ -82,4 +82,19 @@
   .footer {
     padding: 24px 0;
   }
+}
+.footer-link-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #000;
+  text-align: left;
+  cursor: pointer;
+}
+
+.footer-link-button:hover {
+  text-decoration: underline;
 }

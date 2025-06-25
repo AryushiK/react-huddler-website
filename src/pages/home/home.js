@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./home.css";
 import { gsap } from "gsap";
+import WaitlistPopup from '../../components/WaitlistPopup';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useNavigate } from 'react-router-dom';
 
@@ -13,7 +14,7 @@ const Home = () => {
     const [isHovered, setIsHovered] = useState(false);
     const [isInvestHovered, setIsInvestHovered] = useState(false);
     const navigate = useNavigate();
-
+    const [showPopup, setShowPopup] = useState(false);
 
 
     useEffect(() => {
@@ -208,15 +209,17 @@ const Home = () => {
 
             <section className="huddler-section">
                 <div className="huddler-heading">
-                    <video
-                        src="/assets/gifs/clicky1.mp4"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        className="clicky-video"
-                        preload="none"
-                    ></video>
+                    <div className="clicky-wrapper" onClick={() => setShowPopup(true)} style={{ cursor: 'pointer' }}>
+                        <video
+                            src="/assets/gifs/clicky1.mp4"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="clicky-video"
+                            preload="none"
+                        ></video>
+                    </div>
                     <p className="huddler-subtext">
                         Everyone’s money journey is different—
                         <strong>find the Huddler path that fits yours.</strong>
@@ -293,15 +296,17 @@ const Home = () => {
                         </p>
                     </div>
                 </div>
-                <video
-                    src="/assets/gifs/clicky2.mp4"
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="none"
-                    className="clicky-video"
-                ></video>
+                <div className="clicky-wrapper" onClick={() => setShowPopup(true)} style={{ cursor: 'pointer' }}>
+                    <video
+                        src="/assets/gifs/clicky2.mp4"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="none"
+                        className="clicky-video"
+                    ></video>
+                </div>
                 <div className="wealth-support-text">
                     <p>
                         We Tackle Health Together. We Support Each Other’s Mental
@@ -311,8 +316,11 @@ const Home = () => {
                     </p>
                 </div>
                 <div className="waitlist-button">
-                    <button onClick={() => navigate('/signup')}>Join The Waitlist</button>
+                    <button onClick={() => setShowPopup(true)}>Join The Waitlist</button>
                 </div>
+
+                {/* Reusable Popup */}
+                <WaitlistPopup isOpen={showPopup} onClose={() => setShowPopup(false)} />
             </section>
         </div>
     );

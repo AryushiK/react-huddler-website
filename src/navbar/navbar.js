@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import './navbar.css';
 import { Link } from 'react-router-dom';
+import WaitlistPopup from '../components/WaitlistPopup';
+
+
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+    const [popupVisible, setPopupVisible] = useState(false);
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
@@ -28,7 +31,19 @@ function Navbar() {
                     <div className="hamburger" onClick={toggleMenu}>☰</div>
                 </div>
             </nav>
+            <button className="join-waitlist-btn" onClick={() => setPopupVisible(true)}>
+                Join Waitlist
+            </button>
+
+            <WaitlistPopup isOpen={popupVisible} onClose={() => setPopupVisible(false)} />
         </div>
     );
 }
 export default Navbar;
+
+// import WaitlistPopup from '../components/WaitlistPopup';
+// const [isOpen, setIsOpen] = useState(false);
+
+// <button onClick={() => setIsOpen(true)}>Open Waitlist</button>
+// <WaitlistPopup isOpen={isOpen} onClose={() => setIsOpen(false)} />
+

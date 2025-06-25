@@ -81,27 +81,27 @@ function Invest() {
                         <div className="scroll-card card-one">
                             <img src="/assets/images/Group1.svg" alt="Group Icon" className="group-icon1" />
                             <p>
-                                Unlock Access to Bigger Plays<br />
-                                Cross high minimums together and access quality investment<br />
-                                opportunities previously reserved for the 0.01%. You bring<br />
-                                the group — we help you move like a fund.
+                                <span className="first-line">Unlock Access to Bigger Plays</span><br />
+                                Cross high minimums together and access quality investment
+                                opportunities previously reserved for the 0.01%. You bring
+                                the group, we help you move like a fund.
                             </p>
                         </div>
 
                         <div className="scroll-card card-two">
                             <img src="/assets/images/Group2.svg" alt="Group Icon" className="group-icon2" />
                             <p>
-                                📊 Real-Time Visibility & Control<br />
-                                See who’s in, what’s committed, and how things are performing —<br />
-                                all from one clean, auditable dashboard.
+                                <span className="first-line">Real-Time Visibility & Control</span><br />
+                                See who’s in, what’s committed, and how things are performing:
+                                All from one clean, auditable dashboard.
                             </p>
                         </div>
 
                         <div className="scroll-card card-three">
                             <img src="/assets/images/Group3.svg" alt="Group Icon" className="group-icon3" />
                             <p>
-                                🧩 Built-In Structure That Handles the “What Ifs”<br />
-                                Disagreements? Exits? Payouts? Every group gets a clear<br />
+                                <span className="first-line">Built-In Structure That Handles the “What Ifs”</span><br />
+                                Disagreements? Exits? Payouts? Every group gets a clear
                                 operating agreement, drafted and enforced by us.
                             </p>
                         </div>
@@ -109,8 +109,8 @@ function Invest() {
                         <div className="scroll-card card-three">
                             <img src="/assets/images/Group4.svg" alt="Group Icon" className="group-icon4" />
                             <p>
-                                🔧 End-to-End Infrastructure for Group Investing<br />
-                                We handle the heavy lifting — SPVs, bank account setup, capital<br />
+                                <span className="first-line">End-to-End Infrastructure for Group Investing</span><br />
+                                We handle all the heavy lifting; SPVs, bank account setup, capital
                                 calls, KYC, tax filing, and compliance.
                             </p>
                         </div>
@@ -118,9 +118,9 @@ function Invest() {
                         <div className="scroll-card card-four">
                             <img src="/assets/images/Group5.svg" alt="Group Icon" className="group-icon5" />
                             <p>
-                                AI That Drives Group Clarity<br />
-                                From deal summaries to risk signals, Huddler’s AI keeps your<br />
-                                group aligned — surfacing what matters, flagging what doesn’t.
+                                <span className="first-line">AI That Drives Group Clarity</span><br />
+                                From deal summaries to risk signals, Huddler’s AI keeps your
+                                group aligned; surfacing what matters, flagging what doesn’t.
                             </p>
                         </div>
                     </div>
@@ -128,68 +128,71 @@ function Invest() {
             </section>
 
             <div className="invest-container">
-                <div className="card card-top card-1">
-                    <div className="card-inner">
-                        <div className="card-front">
-                            <img src="/assets/images/real-estate-2.png" alt="Fixed Deposits Icon" className="card-icon" />
-                            <h3>Real Estates</h3>
-                            {/* <p>*Specific institutions and tenures from NRO accounts only.</p> */}
-                        </div>
-                        <div className="card-back">
-                            <p>More about Fixed Deposits</p>
+                <h2 className="invest-title-overlay">Explore Our Investment Opportunities</h2>
+
+                <div className="invest-cards-wrapper">
+                    <div className="card card-top card-1">
+                        <div className="card-inner">
+                            <div className="card-front">
+                                <img src="/assets/images/real-estate-3.png" alt="Fixed Deposits Icon" className="card-icon" />
+                                <h3>Real Estates</h3>
+                            </div>
+                            <div className="card-back">
+                                <p>More about Fixed Deposits</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className="card card-top card-2">
-                    <div className="card-inner">
-                        <div className="card-front">
-                            <img src="/assets/images/portfolio-management-3.png" alt="AIF Icon" className="card-icon" />
-                            <h3>Mutual Funds</h3>
-                            {/* <p>Invest easily in mutual fund schemes and meet your long-term financial goals.</p> */}
-                        </div>
-                        <div className="card-back">
-                            <p>More about Mutual Funds</p>
+                    <div className="card card-top card-2">
+                        <div className="card-inner">
+                            <div className="card-front">
+                                <img src="/assets/images/portfolio-management-3.png" alt="AIF Icon" className="card-icon" />
+                                <h3>Mutual Funds</h3>
+                            </div>
+                            <div className="card-back">
+                                <p>More about Mutual Funds</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className="card card-top card-3">
-                    <div className="card-inner">
-                        <div className="card-front">
-                            <img src="/assets/images/hedge-fund-2.png" alt="AIF Icon" className="card-icon" />
-                            <h3>Hedge Funds</h3>
-                        </div>
-                        <div className="card-back">
-                            <p>More about Insurance</p>
+                    <div className="card card-top card-3">
+                        <div className="card-inner">
+                            <div className="card-front">
+                                <img src="/assets/images/hedge-fund-2.png" alt="AIF Icon" className="card-icon" />
+                                <h3>Hedge Funds</h3>
+                            </div>
+                            <div className="card-back">
+                                <p>More about Insurance</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className="card card-bottom card-4">
-                    <div className="card-inner">
-                        <div className="card-front">
-                            <img src="/assets/images/portfolio-management-3.png" alt="AIF Icon" className="card-icon" />
-                            <h3>Portfolio Management Services</h3>
-                        </div>
-                        <div className="card-back">
-                            <p>More about PMS</p>
+                    <div className="card card-bottom card-4">
+                        <div className="card-inner">
+                            <div className="card-front">
+                                <img src="/assets/images/portfolio-management-3.png" alt="AIF Icon" className="card-icon" />
+                                <h3>Portfolio Management Services</h3>
+                            </div>
+                            <div className="card-back">
+                                <p>More about PMS</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className="card card-bottom card-5">
-                    <div className="card-inner">
-                        <div className="card-front">
-                            <img src="/assets/images/portfolio-management-3.png" alt="AIF Icon" className="card-icon" />
-                            <h3>Alternate Investments Funds</h3>
-                        </div>
-                        <div className="card-back">
-                            <p>More about AIF</p>
+                    <div className="card card-bottom card-5">
+                        <div className="card-inner">
+                            <div className="card-front">
+                                <img src="/assets/images/portfolio-management-3.png" alt="AIF Icon" className="card-icon" />
+                                <h3>Alternate Investments Funds</h3>
+                            </div>
+                            <div className="card-back">
+                                <p>More about AIF</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
 
 
             <section className="next-section">

@@ -1,0 +1,121 @@
+.faq-page {
+  background-color: #000;
+  color: #fff;
+  padding: 4rem 1rem;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  margin-top: 90px;
+}
+.view-toggle-button {
+  margin-top: 2rem;
+  background: none;
+  border: 1px solid #fff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: 0.2s;
+}
+
+.view-toggle-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.faq-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  /* flex: 1 1 300px; */
+  line-height: 1.2;
+  font-family: "Montserrat", sans-serif;
+}
+.faq-heading-wrapper {
+  font-family: "Montserrat", sans-serif;
+  flex-direction: column;
+}
+
+.faq-list {
+  flex: 2 1 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.faq-item {
+  border-bottom: 1px solid #333;
+  padding-bottom: 1rem;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.faq-icon {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.faq-answer {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #bbb;
+  white-space: pre-line;
+}
+
+.view-toggle-button {
+  margin-top: 2rem;
+  background: none;
+  border: 1px solid #fff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: 0.2s;
+}
+
+.view-toggle-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+.contact-us-button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-us-button:hover {
+  background-color: #1d4ed8;
+}
+
+.contact-us-wrapper {
+  margin-top: 1.2rem;
+}

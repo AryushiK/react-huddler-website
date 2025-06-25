@@ -312,3 +312,22 @@
     width: 20px;
   }
 }
+.join-waitlist-btn {
+  position: absolute;
+  right: 40px;
+  background: rgba(238, 238, 240, 0.7);
+  backdrop-filter: blur(12px);
+  color: black;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.join-waitlist-btn:hover {
+  background-color: rgba(189, 189, 190, 0.7);
+}

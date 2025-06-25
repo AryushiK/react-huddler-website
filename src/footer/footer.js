@@ -1,7 +1,13 @@
 import React from 'react';
 import './footer.css';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Footer() {
+    const navigate = useNavigate();
+
+    const handleContactClick = () => {
+        window.location.href = 'mailto:support@huddler.in';
+    };
     return (
         <footer className="footer">
             <div className="footer-container">
@@ -21,12 +27,20 @@ function Footer() {
                         <a href="#">Privacy Policy</a>
                     </div>
                     <div className="footer-column">
-                        <a href="#">FAQs</a>
-                        <a href="#">Circles</a>
+                        <Link to="/faqs">FAQs</Link>
+                        <Link to="/circles">Circles</Link>
                     </div>
                     <div className="footer-column">
-                        <a href="#">Invest</a>
+                        <Link to="/invest">Invest</Link>
                         <a href="#">About Us</a>
+                    </div>
+                    <div className="footer-column">
+                        <button
+                            onClick={handleContactClick}
+                            className="footer-link-button"
+                        >
+                            Contact Us
+                        </button>
                     </div>
                 </div>
             </div>
