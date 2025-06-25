@@ -37,14 +37,14 @@
 
 .invest-hero-text {
   flex: 1 1 500px;
-  margin-left: 130px;
-  margin-top: 30px;
+  margin-left: 210px;
+  margin-top: 130px;
 }
 
 .invest-hero-text h2 {
   font-family: Montserrat;
   font-weight: 500;
-  font-size: 42px;
+  font-size: 26px;
   line-height: 100%;
   letter-spacing: 0%;
 
@@ -60,8 +60,8 @@
 
 .invest-hero-text p {
   font-family: Montserrat;
-  font-weight: 700;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
 
@@ -79,10 +79,10 @@
 }
 
 .invest-hero-image img {
-  width: 750px;
+  width: 590px;
   height: 752px;
-  margin-top: -400px;
-  margin-left: 700px;
+  margin-top: -420px;
+  margin-left: 630px;
 }
 
 .invest-container {
@@ -93,6 +93,7 @@
   padding: 60px 120px;
   background-color: #000;
   min-height: 60vh;
+
   /* margin-top: 400px; */
 }
 .group-box {
@@ -237,7 +238,8 @@
   font-size: 3rem;
   color: black;
   text-align: center;
-  margin: 50px 0;
+  margin-top: 130px;
+  margin-bottom: -40px;
   position: relative;
   z-index: 10;
 }
@@ -276,6 +278,7 @@
   margin-top: 250px;
   color: black;
   /* font-size: 1.5rem; */
+  font-family: "Montserrat", sans-serif;
   text-align: left;
   max-width: 500px;
 }

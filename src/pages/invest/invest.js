@@ -37,7 +37,8 @@ function Invest() {
             });
 
             return () => {
-                ctx.revert(); // ✅ Proper cleanup to remove pinned elements & animations
+                ScrollTrigger.getAll().forEach(trigger => trigger.kill()); // 💥 This line is key
+                ctx.revert(); // ✅ Proper cleanup
             };
         }
     }, []);

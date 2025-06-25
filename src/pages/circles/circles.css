@@ -1,0 +1,171 @@
+/* Container styles */
+.circles-container {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.circles-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circles-group {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Base circle styles */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  animation: wave 4s ease-in-out infinite;
+}
+
+/* Individual circle sizes, delays, gradients and borders */
+.circle-1 {
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(
+    circle,
+    rgba(55, 65, 81, 0.8) 0%,
+    rgba(156, 163, 175, 0.3) 100%
+  );
+  border: 2px solid rgba(55, 65, 81, 0.9);
+  animation-delay: 0s;
+}
+
+.circle-2 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(
+    circle,
+    rgba(75, 85, 99, 0.7) 0%,
+    rgba(156, 163, 175, 0.25) 100%
+  );
+  border: 2px solid rgba(75, 85, 99, 0.8);
+  animation-delay: 0.5s;
+}
+
+.circle-3 {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(
+    circle,
+    rgba(107, 114, 128, 0.6) 0%,
+    rgba(156, 163, 175, 0.2) 100%
+  );
+  border: 2px solid rgba(107, 114, 128, 0.7);
+  animation-delay: 1s;
+}
+
+.circle-4 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(
+    circle,
+    rgba(156, 163, 175, 0.5) 0%,
+    rgba(209, 213, 219, 0.15) 100%
+  );
+  border: 2px solid rgba(156, 163, 175, 0.6);
+  animation-delay: 1.5s;
+}
+
+.circle-5 {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(
+    circle,
+    rgba(209, 213, 219, 0.4) 0%,
+    rgba(229, 231, 235, 0.1) 100%
+  );
+  border: 2px solid rgba(209, 213, 219, 0.5);
+  animation-delay: 2s;
+}
+
+.circle-6 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(229, 231, 235, 0.3) 0%,
+    rgba(243, 244, 246, 0.05) 100%
+  );
+  border: 2px solid rgba(229, 231, 235, 0.4);
+  animation-delay: 2.5s;
+}
+
+/* Center content styles */
+.center-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.coming-soon-text {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #374151;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+/* Wave animation keyframes */
+@keyframes wave {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .coming-soon-text {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+@media (max-width: 480px) {
+  .coming-soon-text {
+    font-size: 2rem;
+  }
+
+  .circle-1 {
+    width: 80px;
+    height: 80px;
+  }
+  .circle-2 {
+    width: 120px;
+    height: 120px;
+  }
+  .circle-3 {
+    width: 160px;
+    height: 160px;
+  }
+  .circle-4 {
+    width: 200px;
+    height: 200px;
+  }
+  .circle-5 {
+    width: 240px;
+    height: 240px;
+  }
+  .circle-6 {
+    width: 280px;
+    height: 280px;
+  }
+}

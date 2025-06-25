@@ -1,0 +1,23 @@
+/* src/styles/Ripple.css
+
+.ripple-circle {
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.25);
+  animation: ripple 2s ease infinite;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+@keyframes ripple {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+
+.mask-gradient {
+  mask-image: linear-gradient(to bottom, white, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, white, transparent);
+} */

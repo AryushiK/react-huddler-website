@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import "./home.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useNavigate } from 'react-router-dom';
+
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -9,6 +11,9 @@ gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
     const sectionRef = useRef(null);
     const [isHovered, setIsHovered] = useState(false);
+    const [isInvestHovered, setIsInvestHovered] = useState(false);
+    const navigate = useNavigate();
+
 
 
     useEffect(() => {
@@ -232,13 +237,16 @@ const Home = () => {
                             onMouseLeave={() => setIsHovered(false)}
                         >
                             <img
-                                src={isHovered ? "/assets/gifs/circlesgif.gif" : "/assets/images/bnw-circles-illustration.png"}
+                                src={isHovered ? "/assets/gifs/circles_1.gif" : "/assets/images/bnw-circles-illustration.png"}
                                 alt="Huddler Circles"
                                 className="circles-image"
                             />
                         </div>
 
-                        <button className="huddler-btn">Explore Circles</button>
+                        <button className="huddler-btn" onClick={() => navigate('/circles')}>
+                            Explore Circles
+                        </button>
+
                     </div>
 
                     <div className="huddler-card">
@@ -247,10 +255,25 @@ const Home = () => {
                             For those who want to <em>pool capital</em> and
                             <em> access exclusive investment opportunities</em>.
                         </p>
-                        <div className="image-box2">
-                            <img src="/assets/images/meditate.png" />
+                        <div
+                            className="image-box2"
+                            onMouseEnter={() => setIsInvestHovered(true)}
+                            onMouseLeave={() => setIsInvestHovered(false)}
+                        >
+                            <img
+                                src={
+                                    isInvestHovered
+                                        ? "/assets/gifs/invest-gif.gif"
+                                        : "/assets/images/bnw000.png"
+                                }
+                                alt="Huddler Invest"
+                                className="invest-image"
+                            />
                         </div>
-                        <button className="huddler-btn">Explore Invest</button>
+
+                        <button className="huddler-btn" onClick={() => navigate('/invest')}>
+                            Explore Invest
+                        </button>
                     </div>
                 </div>
             </section>
@@ -258,7 +281,7 @@ const Home = () => {
             <section className="wealth-journey-section">
                 <div className="wealth-journey-container">
                     <div className="image-placeholder">
-                        <img src="/assets/images/watering.png" />
+                        <img src="/assets/images/phone-illustration.png" />
                     </div>
                     <div className="wealth-text">
                         <p className="wealth-subtext">
@@ -288,7 +311,7 @@ const Home = () => {
                     </p>
                 </div>
                 <div className="waitlist-button">
-                    <button>Join The Waitlist</button>
+                    <button onClick={() => navigate('/signup')}>Join The Waitlist</button>
                 </div>
             </section>
         </div>
