@@ -50,7 +50,7 @@ function Navbar() {
             <nav className="floating-navbar">
                 <div className="navbar-links">
                     <ul className={`nav-links ${isMenuOpen ? 'show' : ''}`}>
-                        <li><Link to="/circles">Circles</Link></li>
+                        {/* <li><Link to="/circles">Circles</Link></li> */}
                         <li><Link to="/invest">Invest</Link></li>
                         <li><Link to="/blog">Blog</Link></li>
                         <li><Link to="/aboutus">About Us</Link></li>

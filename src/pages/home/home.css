@@ -701,7 +701,8 @@ p.fade-slide-in.delay-2 {
 
   /* Huddler Section Mobile */
   .huddler-section {
-    padding: 2rem 0.5rem;
+    padding: 0rem 0.5rem;
+    padding-bottom: 2rem;
   }
 
   .clicky-video {

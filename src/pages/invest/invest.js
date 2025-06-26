@@ -75,7 +75,7 @@ function Invest() {
             {/* Horizontal Scroll Section */}
             <section className="scroll-section" ref={sectionRef}>
                 <h2 className="scroll-heading">
-                    Investor-Focused <span className="highlight">Platform</span> Solutions
+                    Designed for Seamless <span className="highlight">Group</span> Investing
                 </h2>
 
                 <div className="scroll-wrapper" ref={containerRef}>
@@ -130,7 +130,8 @@ function Invest() {
             </section>
 
             <div className="invest-container dark-bg-section">
-                <h2 className="invest-title-overlay">Explore Our Investment Opportunities</h2>
+                <h2 className="invest-title-overlay">Premium Opportunities, No Longer Out of Reach</h2>
+                <p className="invest-title-overlay-p">We partner with leading investment providers to give your group structured, compliant access to exclusive investments  that go beyond what individuals can access alone</p>
 
                 <div className="invest-cards-wrapper">
                     <div className="card card-top card-1">
@@ -140,7 +141,7 @@ function Invest() {
                                 <h3>Real Estates</h3>
                             </div>
                             <div className="card-back">
-                                <p>More about Fixed Deposits</p>
+                                <p>Co-own real estate as a group with legal clarity, transparency, and full digital tracking</p>
                             </div>
                         </div>
                     </div>
@@ -148,11 +149,11 @@ function Invest() {
                     <div className="card card-top card-2">
                         <div className="card-inner">
                             <div className="card-front">
-                                <img src="/assets/images/portfolio-management-3.png" alt="AIF Icon" className="card-icon" />
-                                <h3>Mutual Funds</h3>
+                                <img src="/assets/images/private-equity.png" alt="AIF Icon" className="card-icon" />
+                                <h3>Private Equity</h3>
                             </div>
                             <div className="card-back">
-                                <p>More about Mutual Funds</p>
+                                <p>Access pre-IPO deals as a group with flexible exits and early-stage upside</p>
                             </div>
                         </div>
                     </div>
@@ -164,7 +165,7 @@ function Invest() {
                                 <h3>Hedge Funds</h3>
                             </div>
                             <div className="card-back">
-                                <p>More about Insurance</p>
+                                <p>Unlock group access to hedge funds traditionally reserved for institutions</p>
                             </div>
                         </div>
                     </div>
@@ -176,7 +177,7 @@ function Invest() {
                                 <h3>Portfolio Management Services</h3>
                             </div>
                             <div className="card-back">
-                                <p>More about PMS</p>
+                                <p>Access leading PMS offerings together with full transparency and expert oversight</p>
                             </div>
                         </div>
                     </div>
@@ -184,11 +185,11 @@ function Invest() {
                     <div className="card card-bottom card-5">
                         <div className="card-inner">
                             <div className="card-front">
-                                <img src="/assets/images/portfolio-management-3.png" alt="AIF Icon" className="card-icon" />
-                                <h3>Alternate Investments Funds</h3>
+                                <img src="/assets/images/AIFs.png" alt="AIF Icon" className="card-icon" />
+                                <h3>Other<br />Alternate Investments Funds</h3>
                             </div>
                             <div className="card-back">
-                                <p>More about AIF</p>
+                                <p>Invest in curated AIFs collectively, with professional management and compliant access</p>
                             </div>
                         </div>
                     </div>

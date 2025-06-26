@@ -115,12 +115,12 @@ const Home = () => {
         wordSpans.forEach((span, index) => {
             ScrollTrigger.create({
                 trigger: section.querySelector(".animated-paragraph"),
-                start: `top+=${index * 55} bottom-=180`,
+                start: `top+=${index * 25} bottom-=180`,
                 end: `top+=${(index + 1) * 55} bottom-=10`,
                 scrub: true,
                 onEnter: () => {
                     gsap.to(span, {
-                        color: "#000", // dark black
+                        color: "#000",
                         duration: 0.1,
                         ease: "power1.out",
                     });
@@ -192,15 +192,14 @@ const Home = () => {
                 </h2>
 
                 <p className="animated-paragraph animated-paragraph-huddler">
-                    <span>We</span> <span>make</span> <span>it</span><br />
-                    <span>easy</span> <span>to</span> <span>grow</span><br />
-                    <span>wealth</span> <span>with</span> <span>people</span><br />
-                    <span>you</span> <span>trust,</span> <span>powered</span><br />
-                    <span>by</span> <span>smart</span> <span>tech,</span><br />
-                    <span>seamless</span> <span>structure,</span> <br /><span>and</span>
-                    <span>a</span> <span>setup</span><span>so</span><br />
-                    <span>smooth,</span> <span>it</span> <span>feels</span><br />
-                    <span>effortless.</span>
+                    <span>We</span><span>make</span><span>it</span><span>easy</span><br />
+                    <span>to</span><span>grow</span><span>wealth</span><br />
+                    <span>with</span><span>people</span><span>you</span><span>trust,</span><br />
+                    <span>powered</span><span>by</span><span>smart</span><span>tech,</span><br />
+                    <span>a</span><span>seamless</span><span>structure,</span><br />
+                    <span>and</span><span>a</span> <span>setup</span><span>so</span><span>smooth,</span><br />
+                    <span>it</span><span>feels</span><span>effortless.</span>
+
                 </p>
 
 

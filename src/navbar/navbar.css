@@ -253,7 +253,7 @@
 }
 
 .nav-links li a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(110, 109, 109, 0.1);
 }
 
 /* Hamburger for mobile */
@@ -284,7 +284,7 @@
     position: absolute;
     top: 60px;
     left: 0;
-    right: 0;
+
     padding: 20px;
   }
   .floating-navbar {
@@ -299,6 +299,9 @@
 
   .nav-links.show {
     display: flex;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
   }
 
   .hamburger {
@@ -313,7 +316,7 @@
   .floating-navbar {
     position: absolute;
     left: 50%;
-    margin-left: 130px;
+    /* margin-left: 130px; */
     transform: translateX(-50%);
     background: transparent;
 
