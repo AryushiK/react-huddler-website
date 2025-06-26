@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './navbar.css';
 import { Link } from 'react-router-dom';
 import WaitlistPopup from '../components/WaitlistPopup';
@@ -11,12 +11,39 @@ function Navbar() {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+    const [useWhiteLogo, setUseWhiteLogo] = useState(false);
+    useEffect(() => {
+        const sections = document.querySelectorAll('.dark-bg-section');
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1,
+        };
 
+        const observer = new IntersectionObserver((entries) => {
+            const isInDark = entries.some(entry => entry.isIntersecting);
+            setUseWhiteLogo(isInDark);
+        }, observerOptions);
+
+        sections.forEach(section => observer.observe(section));
+
+        return () => {
+            sections.forEach(section => observer.unobserve(section));
+        };
+    }, []);
     return (
         <div className="navbar-wrapper">
             {/* Logo floating left */}
             <Link to="/" className="detached-logo">
-                <img src="/assets/images/huddler_logo.png" alt="HUDDLER Logo" />
+                <img
+                    src={
+                        useWhiteLogo
+                            ? '/assets/images/huddler-logo-white.png'
+                            : '/assets/images/huddler_logo.png'
+                    }
+                    alt="HUDDLER Logo"
+                    className={useWhiteLogo ? 'logo-white' : 'logo-default'}
+                />
             </Link>
 
             {/* Floating centered navbar bar */}

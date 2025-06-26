@@ -11,11 +11,13 @@ import Invest from "../src/pages/invest/invest.js";
 import Blog from "../src/pages/blog/blog.js";
 import AboutUs from "../src/pages/aboutus/aboutus.js";
 import FAQs from './pages/faqs/faqs.js';
+import ScrollToTop from '../src/ScrollToTop.js';
 
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

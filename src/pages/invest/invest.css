@@ -2,6 +2,7 @@
   background-color: #000;
   color: #fff;
   padding: 60px 40px;
+  overflow-x: hidden;
 }
 
 .invest-hero-heading {
@@ -11,40 +12,44 @@
 
 .invest-hero-heading h2 {
   margin-top: 10px;
-  font-size: 28px;
+  font-size: 48px;
   font-weight: 600;
   color: #f26522;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  margin-top: -60px;
+  margin-bottom: -90px;
 }
 
 .invest-huddler-logo {
-  height: 150px;
+  height: 250px;
   width: auto;
   vertical-align: middle;
+  margin-top: 6px;
 }
 
 .invest-hero-content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   max-width: 1200px;
-  margin-left: -100px;
+  margin: 0 auto; /* Center the content with equal space */
+  width: 100%;
 }
 
 .invest-hero-text {
   flex: 1 1 500px;
-  margin-left: 210px;
-  margin-top: 130px;
+  margin-left: 90px;
+  margin-top: 100px;
 }
 
 .invest-hero-text h2 {
   font-family: Montserrat;
   font-weight: 500;
-  font-size: 26px;
+  font-size: 28px;
   line-height: 100%;
   letter-spacing: 0%;
 
@@ -61,8 +66,8 @@
 .invest-hero-text p {
   font-family: Montserrat;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 100%;
+  font-size: 20px;
+  line-height: 150%;
   letter-spacing: 0%;
 
   color: #ccc;
@@ -79,17 +84,18 @@
 }
 
 .invest-hero-image img {
-  width: 590px;
-  height: 752px;
+  width: 690px;
+  height: 792px;
   margin-top: -420px;
-  margin-left: 630px;
+  /* margin-left: 630px; */
 }
 
 .invest-container {
   position: relative;
   min-height: 1000px;
   background-color: #000;
-
+  overflow-x: hidden;
+  /* padding: 60px 40px; */
   /* margin-top: 400px; */
 }
 .invest-cards-wrapper {
@@ -98,7 +104,8 @@
   grid-template-columns: repeat(6, 1fr); /* 6 equal columns */
   grid-auto-rows: auto;
   gap: 20px;
-  padding: 60px 120px;
+  margin: 0 auto;
+  padding: 60px 160px;
   background-color: #000;
   padding-top: 290px;
 }
@@ -169,8 +176,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgb(255 150 0 / 20%); /* light orange with transparency */
-  border: 1px solid rgba(255, 165, 0, 0.3); /* subtle orange border */
+  background: #f2652217; /* light orange with transparency */
+  border: 1px solid #ffa5004d; /* subtle orange border */
   cursor: default;
   transition: background 0.3s ease;
   border-radius: 15px;
@@ -178,14 +185,17 @@
   color: white;
   backface-visibility: hidden;
   display: flex;
+  font-family: "Montserrat", sans-serif;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .card:hover .card-front,
 .card:hover .card-back {
-  background: rgba(212, 124, 0, 0.9); /* darker orange, more opaque */
+  background: white; /* darker orange, more opaque */
   cursor: pointer;
+  color: black;
+  font-family: "Montserrat", sans-serif;
 }
 
 .card-front img {
@@ -206,6 +216,7 @@
 .scroll-section {
   background-color: white;
   padding: 0;
+
   overflow: hidden;
   position: relative;
   height: 100vh;
@@ -215,14 +226,12 @@
   display: block;
   height: 100vh; /* or more, to push to next section */
 }
-.scroll-cards {
-  display: flex;
-}
 
 .scroll-wrapper {
   height: 700px;
   width: fit-content;
   display: flex;
+  height: 100%;
   position: relative;
 }
 
@@ -301,6 +310,7 @@
 }
 
 .invest-title-overlay {
+  font-family: "Montserrat", sans-serif;
   position: absolute;
   margin-top: 60px;
   top: -40px; /* adjust as needed */

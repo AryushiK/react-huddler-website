@@ -213,7 +213,17 @@
   z-index: 10;
 }
 .detached-logo img {
+  /* height: 36px; */
+}
+.logo-default {
   height: 36px;
+  object-fit: contain;
+}
+
+.logo-white {
+  height: 90px; /* You can tweak this until it visually matches */
+  object-fit: contain;
+  filter: brightness(120%); /* Optional: make it pop on dark bg */
 }
 
 /* Centered floating navbar */

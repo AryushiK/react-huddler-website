@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
+
 import './invest.css';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -7,7 +8,8 @@ function Invest() {
     const containerRef = useRef(null);
     const sectionRef = useRef(null);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
+
         if (typeof window !== 'undefined') {
             gsap.registerPlugin(ScrollTrigger);
 
@@ -37,15 +39,15 @@ function Invest() {
             });
 
             return () => {
-                ScrollTrigger.getAll().forEach(trigger => trigger.kill()); // 💥 This line is key
-                ctx.revert(); // ✅ Proper cleanup
+                ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+                ctx.revert();
             };
         }
     }, []);
 
     return (
         <>
-            <section className="invest-hero-section">
+            <section className="invest-hero-section dark-bg-section">
                 <div className="invest-hero-heading">
                     <h2>
                         INVEST by <img src="/assets/images/huddler-logo-white.png" alt="Huddler Logo" className="invest-huddler-logo" />
@@ -127,7 +129,7 @@ function Invest() {
                 </div>
             </section>
 
-            <div className="invest-container">
+            <div className="invest-container dark-bg-section">
                 <h2 className="invest-title-overlay">Explore Our Investment Opportunities</h2>
 
                 <div className="invest-cards-wrapper">

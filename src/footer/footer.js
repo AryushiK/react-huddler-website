@@ -12,18 +12,19 @@ function Footer() {
         <footer className="footer">
             <div className="footer-container">
                 <div className="footer-logo">
-                    <a href="#">
+                    <Link to="/">
                         <img
                             src="assets/images/huddler_logo.png"
                             alt="HUDDLER Logo"
                             className="footer-logo-img"
                         />
-                    </a>
+                    </Link>
                 </div>
+
 
                 <div className="footer-links">
                     <div className="footer-column">
-                        <a href="#">Home</a>
+                        <Link to="/">Home</Link>
                         <a href="#">Privacy Policy</a>
                     </div>
                     <div className="footer-column">
