@@ -226,18 +226,17 @@ const Home = () => {
                 </div>
 
                 <div className="huddler-cards">
-                    <div className="huddler-card">
+                    <div className="huddler-card"
+                        onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}
+                    >
                         <h3>Huddler Circles</h3>
                         <p>
                             For those who want to <em>save smarter</em>,
                             <em>stay accountable</em>, and <em>access credit</em> within
                             trusted groups.
                         </p>
-                        <div
-                            className="image-box1"
-                            onMouseEnter={() => setIsHovered(true)}
-                            onMouseLeave={() => setIsHovered(false)}
-                        >
+                        <div className="image-box1">
                             <img
                                 src={isHovered ? "/assets/gifs/circles_1.gif" : "/assets/images/bnw-circles-illustration.png"}
                                 alt="Huddler Circles"
@@ -251,17 +250,16 @@ const Home = () => {
 
                     </div>
 
-                    <div className="huddler-card">
+                    <div className="huddler-card"
+                        onMouseEnter={() => setIsInvestHovered(true)}
+                        onMouseLeave={() => setIsInvestHovered(false)}
+                    >
                         <h3>Huddler Invest</h3>
                         <p>
                             For those who want to <em>pool capital</em> and
                             <em> access exclusive investment opportunities</em>.
                         </p>
-                        <div
-                            className="image-box2"
-                            onMouseEnter={() => setIsInvestHovered(true)}
-                            onMouseLeave={() => setIsInvestHovered(false)}
-                        >
+                        <div className="image-box2">
                             <img
                                 src={
                                     isInvestHovered

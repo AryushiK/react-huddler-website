@@ -1,5 +1,4 @@
-import React, { useLayoutEffect, useRef } from 'react';
-
+import React, { useLayoutEffect, useRef, useEffect } from 'react';
 import './invest.css';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -16,6 +15,7 @@ function Invest() {
             const ctx = gsap.context(() => {
                 const container = containerRef.current;
                 const section = sectionRef.current;
+
 
                 if (container && section) {
                     const scrollLength = container.scrollWidth - window.innerWidth;
@@ -35,6 +35,7 @@ function Invest() {
                     });
                 }
 
+
                 ScrollTrigger.refresh();
             });
 
@@ -43,6 +44,54 @@ function Invest() {
                 ctx.revert();
             };
         }
+    }, []);
+
+    const cardsContainerRef = useRef(null);
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        const cards = gsap.utils.toArray('.cashback-card');
+
+        cards.forEach((card, i) => {
+            gsap.fromTo(
+                card,
+                { y: 100, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    ease: 'power2.out',
+                    duration: 0.9,
+                    scrollTrigger: {
+                        trigger: '.cashback-section',
+                        // Each card starts animating at different scroll positions
+                        start: `${20 + (i * 20)}% center`, // Card 0: 20%, Card 1: 40%, Card 2: 60%, Card 3: 80%
+                        end: `${40 + (i * 20)}% center`,   // Card 0: 40%, Card 1: 60%, Card 2: 80%, Card 3: 100%
+                        scrub: 1, // Smooth scrubbing
+                        toggleActions: "play none none reverse",
+                    },
+                }
+            );
+        });
+        // 👇 Add this to fade out the heading
+        gsap.to(".cashback-heading", {
+            opacity: 0,
+            scrollTrigger: {
+                trigger: ".cashback-scroll-wrapper", // cards container
+                start: "bottom 0%",
+                end: "bottom 90%",
+                scrub: true,
+            }
+        });
+
+        return () => {
+            ScrollTrigger.getAll().forEach(trigger => {
+                if (trigger.trigger && trigger.trigger.closest('.cashback-section')) {
+                    trigger.kill();
+                }
+            });
+        }
+
     }, []);
 
     return (
@@ -198,9 +247,48 @@ function Invest() {
 
 
 
-            <section className="next-section">
-                <h2 style={{ color: 'black' }}>This is the next section</h2>
+            <section className="cashback-section">
+                <h2 className="cashback-heading">Use Cashback Smartly</h2>
+                <div className="cashback-scroll-wrapper">
+                    <div className="cashback-card">
+                        <h3>use it to<br />kill your bills</h3>
+                        <img
+                            src="/assets/images/let-us-set-it-up.png"
+                            alt="decorative"
+                            className="cashback-card-img"
+                        />
+                        <p>USE CASHBACK TO REDUCE<br />YOUR CREDIT CARD BILLS</p>
+                    </div>
+                    <div className="cashback-card">
+                        <h3>earn cashback<br />on spends</h3>
+                        <img
+                            src="/assets/images/form-your-investment-group.png"
+                            alt="decorative"
+                            className="cashback-card-img"
+                        />
+                        <p>GET REWARDS WHEN YOU PAY<br />YOUR BILLS</p>
+                    </div>
+                    <div className="cashback-card">
+                        <h3>pay your<br />credit card bills</h3>
+                        <img
+                            src="/assets/images/let-us-set-it-up.png"
+                            alt="decorative"
+                            className="cashback-card-img"
+                        />
+                        <p>NEVER MISS A PAYMENT<br />EVER AGAIN</p>
+                    </div>
+                    <div className="cashback-card">
+                        <h3>track your<br />expenses</h3>
+                        <img
+                            src="/assets/images/let-us-set-it-up.png"
+                            alt="decorative"
+                            className="cashback-card-img"
+                        />
+                        <p>STAY ON TOP OF YOUR<br />FINANCES</p>
+                    </div>
+                </div>
             </section>
+
         </>
     );
 }
