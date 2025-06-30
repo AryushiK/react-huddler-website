@@ -179,9 +179,8 @@ function Invest() {
             </section>
 
             <div className="invest-container dark-bg-section">
-                <h2 className="invest-title-overlay">Premium Opportunities, No Longer Out of Reach</h2>
+                <h2 className="invest-title-overlay">Premium Opportunities, <br/>No Longer Out of Reach</h2>
                 <p className="invest-title-overlay-p">We partner with leading investment providers to give your group structured, compliant access to exclusive investments  that go beyond what individuals can access alone</p>
-
                 <div className="invest-cards-wrapper">
                     <div className="card card-top card-1">
                         <div className="card-inner">
@@ -247,46 +246,52 @@ function Invest() {
 
 
 
-            <section className="cashback-section dark-bg-section">
-                <h2 className="cashback-heading ">Use Cashback Smartly</h2>
-                <div className="cashback-scroll-wrapper">
-                    <div className="cashback-card">
-                        <h3>use it to<br />kill your bills</h3>
-                        <img
-                            src="/assets/images/let-us-set-it-up.png"
-                            alt="decorative"
-                            className="cashback-card-img"
-                        />
-                        <p>USE CASHBACK TO REDUCE<br />YOUR CREDIT CARD BILLS</p>
+            <section className="cashback-section">
+                {/* <div className="cashback-sticky-wrapper"> */}
+                    <h2 className="cashback-heading">Use Cashback Smartly</h2>
+                    <div className="cashback-scroll-wrapper">
+                        <div className="cashback-card">
+                            <h4>1</h4>
+                            <h3>Form your<br />investment group</h3>
+                            <img
+                                src="/assets/images/form-your-investment-group.png"
+                                alt="decorative"
+                                className="cashback-card-img"
+                            />
+                            <p>START A GROUP WITH PEOPLE YOU TRUST AND ALIGN WITH</p>
+                        </div>
+                        <div className="cashback-card">
+                            <h4>2</h4>
+                            <h3>Pick a premium<br />opportunity</h3>
+                            <img
+                                src="/assets/images/pick a premium opportunity.png"
+                                alt="decorative"
+                                className="cashback-card-img"
+                            />
+                            <p>EXPLORE CURATED INVESTMENT TAILORED TO YOUR GROUP'S GOALS AND RISK APPETITE</p>
+                        </div>
+                        <div className="cashback-card">
+                            <h4>3</h4>
+                            <h3>Let us<br />set it up</h3>
+                            <img
+                                src="/assets/images/let-us-set-it-up.png"
+                                alt="decorative"
+                                className="cashback-card-img"
+                            />
+                            <p>WE HANDLE EVERYTHING ON THE BACKEND SO YOUR GROUP CAN FOCUS ON BUILDING WEALTH, NOT PAPERWORK</p>
+                        </div>
+                        <div className="cashback-card">
+                            <h4>4</h4>
+                            <h3>Track, manage<br />& profit</h3>
+                            <img
+                                src="/assets/images/track manage & profit.png"
+                                alt="decorative"
+                                className="cashback-card-img"
+                            />
+                            <p>MONITOR PERFORMANCE, PAYOUTS, AND DOCUMENTS ALL IN ONE SIMPLE DASHBOARD</p>
+                        </div>
                     </div>
-                    <div className="cashback-card">
-                        <h3>earn cashback<br />on spends</h3>
-                        <img
-                            src="/assets/images/form-your-investment-group.png"
-                            alt="decorative"
-                            className="cashback-card-img"
-                        />
-                        <p>GET REWARDS WHEN YOU PAY<br />YOUR BILLS</p>
-                    </div>
-                    <div className="cashback-card">
-                        <h3>pay your<br />credit card bills</h3>
-                        <img
-                            src="/assets/images/let-us-set-it-up.png"
-                            alt="decorative"
-                            className="cashback-card-img"
-                        />
-                        <p>NEVER MISS A PAYMENT<br />EVER AGAIN</p>
-                    </div>
-                    <div className="cashback-card">
-                        <h3>track your<br />expenses</h3>
-                        <img
-                            src="/assets/images/let-us-set-it-up.png"
-                            alt="decorative"
-                            className="cashback-card-img"
-                        />
-                        <p>STAY ON TOP OF YOUR<br />FINANCES</p>
-                    </div>
-                </div>
+                {/* </div> */}
             </section>
 
         </>
