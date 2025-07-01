@@ -44,28 +44,31 @@ function StepCard({ step, index }) {
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
-                setInView(entry.isIntersecting); // true when visible, false when not
+                setInView(entry.isIntersecting);
             },
-            { threshold: 0.4 }
+            {
+                root: null,
+                threshold: 0.2,
+            }
         );
 
-        if (ref.current) observer.observe(ref.current);
+        const currentRef = ref.current;
+        if (currentRef) observer.observe(currentRef);
+
         return () => {
-            if (ref.current) observer.unobserve(ref.current);
+            if (currentRef) observer.unobserve(currentRef);
         };
     }, []);
 
     return (
         <div
             ref={ref}
-            className={`step-card ${inView ? "visible" : ""}`}
-            style={{ transitionDelay: `${index * 0.1}s` }}
+            className={`step-card ${inView ? "animate" : ""}`}
         >
             <img
                 src={step.image}
                 alt={step.title}
                 className={`step-image ${step.className}`}
-
             />
             <div className="step-content">
                 <h2>{index + 1}. {step.title}</h2>
@@ -74,6 +77,7 @@ function StepCard({ step, index }) {
         </div>
     );
 }
+
 
 
 
