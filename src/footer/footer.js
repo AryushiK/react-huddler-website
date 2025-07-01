@@ -33,7 +33,7 @@ function Footer() {
                     </div>
                     <div className="footer-column">
                         <Link to="/invest">Invest</Link>
-                        <a href="#">About Us</a>
+                        <Link to="/aboutus">About Us</Link>
                     </div>
                     <div className="footer-column">
                         <button
