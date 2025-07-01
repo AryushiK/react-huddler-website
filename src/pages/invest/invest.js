@@ -77,9 +77,9 @@ function Invest() {
         gsap.to(".cashback-heading", {
             opacity: 0,
             scrollTrigger: {
-                trigger: ".cashback-scroll-wrapper", // cards container
-                start: "bottom 0%",
-                end: "bottom 90%",
+                trigger: ".cashback-section", // cards container
+                start: "bottom 97%",
+                end: "bottom 75%",
                 scrub: true,
             }
         });
@@ -247,8 +247,8 @@ function Invest() {
 
 
 
-            <section className="cashback-section">
-                <h2 className="cashback-heading">Use Cashback Smartly</h2>
+            <section className="cashback-section dark-bg-section">
+                <h2 className="cashback-heading ">Use Cashback Smartly</h2>
                 <div className="cashback-scroll-wrapper">
                     <div className="cashback-card">
                         <h3>use it to<br />kill your bills</h3>

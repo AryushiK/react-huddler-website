@@ -1,24 +1,25 @@
 import React from 'react';
 import './aboutus.css';
+import { Eye, Users, Rocket } from 'lucide-react';
 
 function Aboutus() {
     return (
         <div className="aboutus-page dark-bg-section"> {/* This wraps the whole section in black */}
             <div className="aboutus-grid-container">
-                <div className="invest-hero-heading-2">
+                {/* <div className="invest-hero-heading-2">
                     <h2>
-                        {/* INVEST by{" "} */}
                         <img
                             src="/assets/images/huddler-logo-white.png"
                             alt="Huddler Logo"
                             className="invest-huddler-logo-2"
                         />
                     </h2>
-                </div>
+                </div> */}
 
                 <div className="aboutus-header">
                     <h1 className="aboutus-title">
                         We’re making financial growth feel less alone
+                        {/* WE'RE MAKING FINANCIAL GROWTH FEEL LESS ALONE */}
                     </h1>
                     <p className="aboutus-description">
                         Huddler’s Collaborative Finance Platform gives you the tools, structure, and support to
@@ -42,15 +43,15 @@ function Aboutus() {
 
                 <div className="aboutus-grid">
                     <div className="aboutus-card">
-                        <span className="aboutus-icon">⌀</span>
+                        <div className="aboutus-icon"><Eye size={28} /></div>
                         <p><strong>Transparent.</strong> Clarity at every step. No hidden terms, no gatekeeping, no guesswork.</p>
                     </div>
                     <div className="aboutus-card">
-                        <span className="aboutus-icon">🌐</span>
+                        <div className="aboutus-icon"><Users size={28} /></div>
                         <p><strong>Inclusive.</strong> Financial growth should be within reach for anyone, not just the privileged few.</p>
                     </div>
                     <div className="aboutus-card">
-                        <span className="aboutus-icon">🧍</span>
+                        <div className="aboutus-icon"><Rocket size={28} /></div>
                         <p><strong>Empowering.</strong> Giving you control, insight, and the tools to grow together with confidence.</p>
                     </div>
                 </div>

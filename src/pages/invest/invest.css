@@ -361,31 +361,23 @@
   padding: 100px 40px;
   position: relative;
   text-align: center;
-  height: 300vh; /* Required for scroll trigger segments */
+  height: 500vh; /* Required for scroll trigger segments */
 }
-
 .cashback-heading {
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  font-size: 28px;
+  font-size: 48px;
   margin-bottom: 60px;
   color: white;
   position: sticky;
-  top: 80px;
-  pointer-events: none;
+  top: 120px;
   background: #000;
   z-index: 0;
-}
-.cashback-card-img {
-  width: 160px;
-  height: auto;
-  margin: 15px auto;
-  display: block;
 }
 
 .cashback-scroll-wrapper {
   position: sticky;
-  top: 100px;
+  top: 170px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -402,12 +394,24 @@
   color: black;
   border-radius: 12px;
   border: 1px solid black;
-  padding: 30px 20px;
+  padding: 10px 20px;
   opacity: 0;
   transform: translateY(100px);
-  text-align: left;
+  /* transition: all 0.3s ease; */
+  text-align: center;
   width: 170px;
-  height: 300px;
+  height: 370px;
+}
+.cashback-card-img {
+  width: 160px;
+  height: auto;
+  margin: 15px auto;
+  display: block;
+}
+
+.cashback-card h4 {
+  font-size: 14px;
+  text-align: left;
 }
 
 .cashback-card h3 {
@@ -421,7 +425,7 @@
   font-size: 13px;
   text-transform: uppercase;
   line-height: 1.5;
-  font-family: "Arial", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* -------- MOBILE VIEW (max-width: 500px) --------- */

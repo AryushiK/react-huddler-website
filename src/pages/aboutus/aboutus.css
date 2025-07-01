@@ -1,129 +1,127 @@
 .aboutus-page {
   background-color: #000;
   color: white;
-  min-height: 100vh;
-  padding-top: 60px;
-  padding-bottom: 80px;
+  padding: 100px 20px 120px 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
-/* Existing styles below (like .aboutus-grid-container) can remain as is */
-
+/* Main grid container */
 .aboutus-grid-container {
-  font-family: "Montserrat", sans-serif;
-  background-color: #000000;
+  background-color: #000;
   color: white;
-  border: 1px solid #444444;
-  max-width: 1200px;
-  margin: 40px auto;
-  margin-top: 40px;
-  margin-inline: 170px;
+  border: 1px solid #2e2e2e;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  border-radius: 12px;
 }
 
-.aboutus-header {
-  text-align: center;
-  padding-bottom: 40px;
-}
-
-.invest-huddler-logo-2 {
-  height: 180px;
-  width: 180px;
+/* Logo */
+/* .invest-huddler-logo-2 {
+  display: block;
+  margin: 0 auto 20px auto;
+  height: 100px;
   width: auto;
-  vertical-align: middle;
-  margin-top: 6px;
-}
-.invest-huddler-logo-2 {
-  /* height: 120px; */
-  margin-top: -10px;
-  margin-bottom: -20px;
-  margin-inline: 390px;
-}
+} */
 
-.invest-title-overlay-2 {
-  font-family: "Montserrat", sans-serif;
-  position: absolute;
-  margin-top: 60px;
-  top: -40px; /* adjust as needed */
-  left: 50%;
-  transform: translateX(-50%);
-
-  color: #f97316;
-  font-size: 48px;
-  font-weight: 600;
-  z-index: 1;
-  pointer-events: none;
-  padding-top: 50px;
-}
-.invest-title-overlay-2 {
-  font-size: 16px;
-  top: -90px;
-  margin-left: 30px;
-}
+/* Header Title */
 .aboutus-title {
-  padding-inline: 100px;
-  color: white;
+  text-align: center;
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  line-height: 1.3;
 }
 
+/* Hero subtitle paragraph */
 .aboutus-description {
-  color: white;
   font-size: 1.1rem;
-
+  color: #ccc;
   max-width: 700px;
   margin: 0 auto;
-  line-height: 1.6;
+  line-height: 1.8;
+  text-align: center;
 }
+
+/* "Why We Exist" Section */
 .aboutus-why {
   max-width: 800px;
-  margin: 50px auto;
+  margin: 80px auto 60px auto;
+  padding: 40px;
+  background-color: #111;
+  border-radius: 12px;
   text-align: center;
 }
 
 .why-heading {
   font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 20px;
-  color: #fff;
+  margin-bottom: 24px;
+  color: white;
 }
 
 .why-description {
   color: #ccc;
   font-size: 1.1rem;
-  line-height: 1.8;
+  line-height: 1.9;
   white-space: pre-line;
 }
+
+/* "Our Values" Section */
 .our-values-heading {
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
-  margin: 60px 0 30px 0;
-  color: #fff;
+  margin: 80px 0 40px 0;
+  color: white;
 }
 
+/* Grid for value cards */
 .aboutus-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid #444444;
-  /* border-left: 1px solid #444444; */
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  margin-top: 32px;
 }
 
 .aboutus-card {
-  padding: 30px;
-  border-right: 1px solid #444444;
-  border-bottom: 1px solid #444444;
-  text-align: left;
+  background-color: #111;
+  padding: 32px 24px;
+  border: 1px solid #2e2e2e;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+.aboutus-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
 }
 
 .aboutus-icon {
-  font-size: 1.8rem;
-  display: inline-block;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 16px;
+  display: block;
 }
 
 .aboutus-card p {
-  color: white;
-  line-height: 1.6;
+  color: #ccc;
+  line-height: 1.7;
   font-size: 1rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .aboutus-title {
+    font-size: 2rem;
+  }
+
+  .why-heading,
+  .our-values-heading {
+    font-size: 1.5rem;
+  }
+
+  .aboutus-description,
+  .why-description {
+    font-size: 1rem;
+  }
 }

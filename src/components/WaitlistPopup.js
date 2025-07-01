@@ -9,7 +9,7 @@ const WaitlistPopup = ({ isOpen, onClose }) => {
         <div className="popup-overlay">
             <div className="popup-content">
                 <h2>HUDDLER: ACHIEVE MORE, TOGETHER</h2>
-                <h4>Be first in line to explore the world of shared investments</h4>
+                <h4>Be first in line to explore the world of shared Finance</h4>
                 <div className="avatar-group">
                     <img src="https://avatars.githubusercontent.com/u/59442788?v=4" alt="avatar" />
                     <img src="https://avatars.githubusercontent.com/u/106103625?v=45" alt="avatar" />
@@ -28,6 +28,21 @@ const WaitlistPopup = ({ isOpen, onClose }) => {
 
                     <label>Email<span>*</span></label>
                     <input type="email" name="email" required />
+                    <label >Product I want to be in waitlist for:<span>*</span></label>
+                    <div className="radio-group">
+                        <label>
+                            <input type="radio" name="product" value="Invest by Huddler" required />
+                            Invest by Huddler
+                        </label>
+                        <label>
+                            <input type="radio" name="product" value="Circles by Huddler" required />
+                            Circles by Huddler
+                        </label>
+                        <label>
+                            <input type="radio" name="product" value="Both" required />
+                            Both
+                        </label>
+                    </div>
 
                     <button type="submit" className="send-btn">Send</button>
                     <button type="button" className="close-btn" onClick={onClose}>

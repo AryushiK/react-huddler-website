@@ -581,6 +581,10 @@ p.fade-slide-in.delay-2 {
   font-style: italic;
   margin-top: 20px;
 }
+
+.waitlist-button button:hover {
+  background-color: #f0efef;
+}
 .image-box1 {
   flex: 1;
   display: flex;

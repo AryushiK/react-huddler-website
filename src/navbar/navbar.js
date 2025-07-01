@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './navbar.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import WaitlistPopup from '../components/WaitlistPopup';
 
 
@@ -11,26 +11,47 @@ function Navbar() {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+    const location = useLocation();
+
     const [useWhiteLogo, setUseWhiteLogo] = useState(false);
     useEffect(() => {
         const sections = document.querySelectorAll('.dark-bg-section');
+
         const observerOptions = {
             root: null,
-            rootMargin: '0px',
-            threshold: 0.1,
+            rootMargin: '-40% 0px -40% 0px', // Makes sure even small sections get detected when near center
+            threshold: 0.01,
         };
 
         const observer = new IntersectionObserver((entries) => {
-            const isInDark = entries.some(entry => entry.isIntersecting);
-            setUseWhiteLogo(isInDark);
+            const isDarkVisible = entries.some(
+                (entry) => entry.isIntersecting && entry.target.classList.contains('dark-bg-section')
+            );
+            setUseWhiteLogo(isDarkVisible);
         }, observerOptions);
 
-        sections.forEach(section => observer.observe(section));
+        sections.forEach((section) => observer.observe(section));
+
+        const manualScrollCheck = () => {
+            let found = false;
+            sections.forEach((section) => {
+                const rect = section.getBoundingClientRect();
+                const inView = rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2;
+                if (inView) found = true;
+            });
+            setUseWhiteLogo(found);
+        };
+
+        window.addEventListener('scroll', manualScrollCheck);
+        manualScrollCheck(); // trigger once on mount
 
         return () => {
-            sections.forEach(section => observer.unobserve(section));
+            sections.forEach((section) => observer.unobserve(section));
+            window.removeEventListener('scroll', manualScrollCheck);
         };
-    }, []);
+    }, [location.pathname]);
+    // 👈 important!
+
     return (
         <div className="navbar-wrapper">
             {/* Logo floating left */}
@@ -50,7 +71,7 @@ function Navbar() {
             <nav className="floating-navbar">
                 <div className="navbar-links">
                     <ul className={`nav-links ${isMenuOpen ? 'show' : ''}`}>
-                        {/* <li><Link to="/circles">Circles</Link></li> */}
+                        <li><Link to="/circles">Circles</Link></li>
                         <li><Link to="/invest">Invest</Link></li>
                         <li><Link to="/blog">Blog</Link></li>
                         <li><Link to="/aboutus">About Us</Link></li>
