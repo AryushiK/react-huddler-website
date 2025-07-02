@@ -246,7 +246,7 @@ function Invest() {
 
 
 
-            <section className="cashback-section">
+            <section className="cashback-section dark-bg-section">
                 {/* <div className="cashback-sticky-wrapper"> */}
                 <h2 className="cashback-heading">Use Cashback Smartly</h2>
                 <div className="cashback-scroll-wrapper">

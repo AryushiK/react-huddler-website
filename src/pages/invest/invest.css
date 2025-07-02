@@ -361,7 +361,7 @@
   padding: 100px 40px;
   position: relative;
   text-align: center;
-  height: 400vh; /* Required for scroll trigger segments */
+  height: 500vh; /* Required for scroll trigger segments */
 }
 .cashback-heading {
   font-family: "Montserrat", sans-serif;
@@ -489,7 +489,7 @@
   }
 
   .scroll-cards {
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
   }
 
