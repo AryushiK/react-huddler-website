@@ -25,23 +25,28 @@ function Footer() {
                 <div className="footer-links">
                     <div className="footer-column">
                         <Link to="/">Home</Link>
-                        <a href="#">Privacy Policy</a>
-                    </div>
-                    <div className="footer-column">
                         <Link to="/faqs">FAQs</Link>
-                        <Link to="/circles">Circles</Link>
+
+
                     </div>
                     <div className="footer-column">
                         <Link to="/invest">Invest</Link>
-                        <Link to="/aboutus">About Us</Link>
+                        <Link to="/privacy-policy">Privacy Policy</Link>
+
                     </div>
                     <div className="footer-column">
+                        <Link to="/circles">Circles</Link>
                         <button
                             onClick={handleContactClick}
                             className="footer-link-button"
                         >
                             Contact Us
                         </button>
+
+                    </div>
+                    <div className="footer-column">
+                        <Link to="/aboutus">About Us</Link>
+
                     </div>
                 </div>
             </div>

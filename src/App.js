@@ -12,7 +12,7 @@ import Blog from "../src/pages/blog/blog.js";
 import AboutUs from "../src/pages/aboutus/aboutus.js";
 import FAQs from './pages/faqs/faqs.js';
 import ScrollToTop from '../src/ScrollToTop.js';
-
+import PrivacyPolicy from '../src/pages/privacypolicy/privacypolicy.js';
 
 function App() {
   return (
@@ -27,6 +27,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/faqs" element={<FAQs />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
     </BrowserRouter>

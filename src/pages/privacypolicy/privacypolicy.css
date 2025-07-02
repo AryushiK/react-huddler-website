@@ -1,0 +1,8 @@
+/* privacyPolicy/privacypolicy.css */
+.privacy-policy-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
