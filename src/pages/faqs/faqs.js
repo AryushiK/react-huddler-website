@@ -83,7 +83,7 @@ function FAQs() {
     };
 
     return (
-        <div className="faq-page">
+        <div className="faq-page dark-bg-section">
             <div className="faq-container">
 
                 <div className="faq-heading-wrapper">

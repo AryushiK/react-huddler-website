@@ -517,7 +517,7 @@
     grid-template-columns: 1fr;
     padding: 30px 20px;
 
-    margin-top: 90px;
+    margin-top: 190px;
     margin-inline: 50px;
   }
 
@@ -525,6 +525,7 @@
     width: 100%;
     min-height: 280px;
     height: 280px; /* consistent height */
+    margin-bottom: -30px;
   }
 
   .card-inner {
@@ -552,8 +553,9 @@
 
   .invest-title-overlay {
     font-size: 16px;
-    top: -90px;
-    margin-left: 30px;
+    top: -80px;
+    text-align: center;
+    /* margin-left: 30px; */
   }
 
   .group-icon1,
@@ -585,7 +587,7 @@
     margin-top: 40px;
   }
 
-  .info-card {
+  /* .info-card {
     flex: 1 1 22%;
     background-color: white;
     border: 1.5px solid #ccc;
@@ -595,9 +597,9 @@
     transform: translateY(50px);
     opacity: 0;
     transition: all 0.6s ease;
-  }
+  } */
 
-  .info-card h3 {
+  /* .info-card h3 {
     font-size: 18px;
     font-weight: bold;
     color: black;
@@ -615,5 +617,69 @@
   .info-card.slide-up {
     transform: translateY(0);
     opacity: 1;
+  } */
+  .invest-title-overlay-p {
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    margin-top: 180px;
+    top: -170px;
+    left: 28%;
+    transform: translateX(-18%);
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    z-index: 1;
+    pointer-events: none;
+    padding-top: 100px;
+  }
+  .cashback-section {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .cashback-heading {
+    font-size: 26px;
+    margin-bottom: 30px;
+    top: 10px;
+    position: relative;
+  }
+
+  .cashback-scroll-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: static;
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  .cashback-card {
+    /* width: 90%; */
+    height: 300px;
+    padding: 20px;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+  }
+
+  .cashback-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+
+  .cashback-card p {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .cashback-card-img {
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
   }
 }
