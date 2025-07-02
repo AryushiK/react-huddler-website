@@ -176,8 +176,10 @@
   margin-left: 20px;
 }
 .step-image.img-2 {
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 230px;
+  max-height: 240px;
+  margin-left: 15px;
+  margin-right: 50px;
 }
 .step-image.img-3 {
   max-width: 290px;
