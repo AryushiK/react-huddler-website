@@ -183,7 +183,7 @@ function Invest() {
             <div className="invest-container dark-bg-section">
                 <h2 className="invest-title-overlay">Premium Opportunities, <br />No Longer Out of Reach</h2>
                 <p className="invest-title-overlay-p">We partner with leading investment providers to give your group structured, compliant access to exclusive investments  that go beyond what individuals can access alone</p>
-                <div className="invest-cards-wrapper">
+                <div className="invest-cards-wrapper invest-cards-responsive">
                     <div className="card card-top card-1">
                         <div className="card-inner">
                             <div className="card-front">

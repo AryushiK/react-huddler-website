@@ -684,18 +684,45 @@ p.fade-slide-in.delay-2 {
     gap: 1rem;
   }
 
-  .purple-card1,
-  .purple-card2,
-  .purple-card3,
-  .purple-card4 {
+  .purple-card1 {
+    position: sticky; /* ✅ restore this */
+    top: 120px;
     width: 95%;
     height: 180px;
-    position: static;
     margin: 0 auto 1rem auto;
     border-radius: 15px;
     padding: 0;
     left: auto;
-    top: auto;
+  }
+  .purple-card2 {
+    position: sticky; /* ✅ restore this */
+    top: 150px;
+    width: 95%;
+    height: 180px;
+    margin: 0 auto 1rem auto;
+    border-radius: 15px;
+    padding: 0;
+    left: auto;
+  }
+  .purple-card3 {
+    position: sticky; /* ✅ restore this */
+    top: 180px;
+    width: 95%;
+    height: 180px;
+    margin: 0 auto 1rem auto;
+    border-radius: 15px;
+    padding: 0;
+    left: auto;
+  }
+  .purple-card4 {
+    position: sticky; /* ✅ restore this */
+    top: 210px;
+    width: 95%;
+    height: 180px;
+    margin: 0 auto 1rem auto;
+    border-radius: 15px;
+    padding: 0;
+    left: auto;
   }
 
   .video-container {

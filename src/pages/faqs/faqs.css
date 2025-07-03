@@ -67,6 +67,7 @@
   align-items: center;
   gap: 1rem;
   cursor: pointer;
+  font-family: "Montserrat", sans-serif;
   padding: 0;
 }
 
@@ -82,11 +83,13 @@
   line-height: 1.6;
   color: #bbb;
   white-space: pre-line;
+  font-family: "Montserrat", sans-serif;
 }
 
 .view-toggle-button {
   margin-top: 2rem;
   background: none;
+  font-family: "Montserrat", sans-serif;
   border: 1px solid #fff;
   color: white;
   padding: 10px 20px;

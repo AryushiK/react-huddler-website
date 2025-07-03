@@ -263,8 +263,8 @@ const Home = () => {
                             <img
                                 src={
                                     isInvestHovered
-                                        ? "/assets/gifs/invest-gif.gif"
-                                        : "/assets/images/bnw000.png"
+                                        ? "/assets/gifs/opt_gif.gif"
+                                        : "/assets/images/fin_bnw1.png"
                                 }
                                 alt="Huddler Invest"
                                 className="invest-image"
