@@ -162,7 +162,7 @@ const Home = () => {
                 <div className="hero-text">
                     <h1 className="fade-slide-in delay-1">
                         India’s First{" "}
-                        <span className="aurora-text">Collaborative Finance Platform</span>.
+                        <span className="aurora-text">Collaborative Finance </span>Platform.
                     </h1>
 
 

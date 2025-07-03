@@ -1,198 +1,3 @@
-/* .navbar {
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-  background: rgba(233, 243, 250, 0.8);
-  backdrop-filter: blur(16px);
-  border-radius: 999px;
-  padding: 12px 28px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  width: fit-content;
-}
-
-.navbar-container {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 40px;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-  font-weight: 600;
-  font-size: 16px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #000;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #4a4a4a;
-}
-
-.nav-buttons {
-  display: flex;
-  gap: 16px;
-}
-
-.btn-outline {
-  padding: 8px 20px;
-  border: 2px solid #3c3cfc;
-  border-radius: 999px;
-  background: transparent;
-  color: #000;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.btn-outline:hover {
-  background: #3c3cfc;
-  color: white;
-}
-
-.btn-glow {
-  padding: 8px 20px;
-  background: #000;
-  color: white;
-  font-weight: 600;
-  border-radius: 999px;
-  text-decoration: none;
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-}
-
-.btn-glow::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(
-    90deg,
-    #ff6ec4,
-    #7873f5,
-    #4ade80,
-    #facc15,
-    #f472b6
-  );
-  border-radius: 999px;
-  z-index: -1;
-  background-size: 400% 400%;
-  animation: glowBorder 6s ease infinite;
-}
-
-@keyframes glowBorder {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    padding: 12px 16px;
-  }
-
-  .navbar-container {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .nav-buttons {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .btn-outline,
-  .btn-glow {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-.hamburger {
-  display: none;
-  font-size: 26px;
-  cursor: pointer;
-  margin-left: auto;
-}
-
-@media (max-width: 500px) {
-  .navbar {
-    width: clamp(200px, 80vw, 390px);
-    padding: 12px 16px;
-    left: 4%;
-    transform: none;
-  }
-
-  .navbar-container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 30px;
-  }
-
-  .hamburger {
-    display: block;
-    margin-top: -68px;
-  }
-
-  .nav-links {
-    position: absolute;
-    top: 50px;
-    padding-left: 12px;
-    right: 20;
-    width: clamp(20px, 80vw, 80px);
-    background-color: white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    flex-direction: column;
-    gap: 12px;
-    margin-left: 220px;
-    border-radius: 12px;
-    list-style: none;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-    z-index: 1000;
-  }
-
-  .nav-links.show {
-    max-height: 300px;
-  }
-
-  .nav-links a {
-    color: #000;
-    text-decoration: none;
-    font-weight: 600;
-    display: block;
-    padding: 8px 0;
-    font-size: 12px;
-  }
-} */
 /* Whole wrapper holding both logo and center nav */
 .navbar-wrapper {
   position: fixed; /* make it float above all content */
@@ -215,11 +20,11 @@
 .detached-logo img {
   /* height: 36px; */
 }
+
 .logo-default {
   height: 36px;
   object-fit: contain;
 }
-
 .logo-white {
   height: 90px; /* You can tweak this until it visually matches */
   object-fit: contain;
@@ -282,9 +87,9 @@
     flex-direction: column;
     background: rgba(30, 30, 40, 0.95);
     position: absolute;
-    top: 60px;
-    left: 0;
-
+    top: 40px;
+    left: 10;
+    right: 1px;
     padding: 20px;
   }
   .floating-navbar {
@@ -309,13 +114,18 @@
   }
 
   .floating-navbar {
-    padding: 10px 20px;
+    padding: 5px 15px;
   }
 }
 @media (max-width: 500px) {
+  .detached-logo {
+    position: absolute;
+    left: 190px;
+    z-index: 10;
+  }
   .floating-navbar {
     position: absolute;
-    left: 47%;
+    left: 86%;
     /* margin-left: 130px; */
     transform: translateX(-50%);
     background: rgba(238, 238, 240, 0.7);
@@ -324,6 +134,28 @@
     border-radius: 40px;
     height: 20px;
     width: 20px;
+  }
+  .logo-default {
+    /* height: 36px;
+  object-fit: contain; */
+    height: 26px;
+    object-fit: contain;
+    margin-left: -20px;
+  }
+  .join-waitlist-btn {
+    position: absolute;
+    right: 270px !important;
+    background: rgba(238, 238, 240, 0.7);
+    backdrop-filter: blur(12px);
+    color: black;
+    font-weight: 600;
+    padding: 3px 7px !important;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 14px !important;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease;
+    z-index: 10;
   }
 }
 .join-waitlist-btn {

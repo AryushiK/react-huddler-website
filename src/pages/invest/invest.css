@@ -419,11 +419,12 @@
   font-weight: bold;
   margin-bottom: 10px;
   line-height: 1.3;
+  text-transform: uppercase;
 }
 
 .investcard-card p {
   font-size: 13px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   line-height: 1.5;
   font-family: "Montserrat", sans-serif;
 }
@@ -451,7 +452,7 @@
 }
 
 .Invest-waitlist-btn {
-  background-color: #ff8a4c;
+  background-color: #f26522;
   color: black;
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
@@ -720,5 +721,28 @@
     width: 80%;
     height: auto;
     margin: 10px auto;
+  }
+  .Invest-waitlist-wrapper {
+    padding: 2rem 1rem;
+  }
+
+  .Invest-waitlist-section {
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .Invest-waitlist-text {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
+
+  .Invest-waitlist-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+    width: auto;
   }
 }
