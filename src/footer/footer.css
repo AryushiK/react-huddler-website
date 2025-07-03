@@ -1,6 +1,6 @@
 .footer {
   background-color: white;
-  padding: 40px 0;
+  /* padding: 40px 0; */
 }
 
 .footer-container {
@@ -34,14 +34,27 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
-
-.footer-column a {
-  color: #000;
-  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  color: #000;
+  text-align: left;
+  cursor: pointer;
+}
+
+.footer-column a {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #000;
+  text-align: left;
+  cursor: pointer;
 }
 
 .footer-column a:hover {
@@ -96,5 +109,5 @@
 }
 
 .footer-link-button:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }

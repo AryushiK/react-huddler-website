@@ -1,11 +1,13 @@
-import React, { useLayoutEffect, useRef, useEffect } from 'react';
+import React, { useLayoutEffect, useRef, useEffect, useState } from 'react';
 import './invest.css';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import WaitlistPopup from '../../components/WaitlistPopup';
 
 function Invest() {
     const containerRef = useRef(null);
     const sectionRef = useRef(null);
+    const [popupVisible, setPopupVisible] = useState(false);
 
     useLayoutEffect(() => {
 
@@ -51,7 +53,7 @@ function Invest() {
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
-        const cards = gsap.utils.toArray('.cashback-card');
+        const cards = gsap.utils.toArray('.investcard-card');
 
         cards.forEach((card, i) => {
             gsap.fromTo(
@@ -63,7 +65,7 @@ function Invest() {
                     ease: 'power2.out',
                     duration: 0.9,
                     scrollTrigger: {
-                        trigger: '.cashback-section',
+                        trigger: '.investcard-section',
                         // Each card starts animating at different scroll positions
                         start: `${20 + (i * 20)}% center`, // Card 0: 20%, Card 1: 40%, Card 2: 60%, Card 3: 80%
                         end: `${40 + (i * 20)}% center`,   // Card 0: 40%, Card 1: 60%, Card 2: 80%, Card 3: 100%
@@ -74,10 +76,10 @@ function Invest() {
             );
         });
         // 👇 Add this to fade out the heading
-        gsap.to(".cashback-heading", {
+        gsap.to(".investcard-heading", {
             opacity: 0,
             scrollTrigger: {
-                trigger: ".cashback-section", // cards container
+                trigger: ".investcard-section", // cards container
                 start: "bottom 97%",
                 end: "bottom 75%",
                 scrub: true,
@@ -86,7 +88,7 @@ function Invest() {
 
         return () => {
             ScrollTrigger.getAll().forEach(trigger => {
-                if (trigger.trigger && trigger.trigger.closest('.cashback-section')) {
+                if (trigger.trigger && trigger.trigger.closest('.investcard-section')) {
                     trigger.kill();
                 }
             });
@@ -186,7 +188,7 @@ function Invest() {
                         <div className="card-inner">
                             <div className="card-front">
                                 <img src="/assets/images/real-estate-3.png" alt="Fixed Deposits Icon" className="card-icon" />
-                                <h3>Real Estates</h3>
+                                <h3>Real Estate</h3>
                             </div>
                             <div className="card-back">
                                 <p>Co-own real estate as a group with legal clarity, transparency, and full digital tracking</p>
@@ -246,53 +248,64 @@ function Invest() {
 
 
 
-            <section className="cashback-section dark-bg-section">
-                {/* <div className="cashback-sticky-wrapper"> */}
-                <h2 className="cashback-heading">How It Works</h2>
-                <div className="cashback-scroll-wrapper">
-                    <div className="cashback-card">
+            <section className="investcard-section dark-bg-section">
+                {/* <div className="investcard-sticky-wrapper"> */}
+                <h2 className="investcard-heading">How It Works</h2>
+                <div className="investcard-scroll-wrapper">
+                    <div className="investcard-card">
                         <h4>1</h4>
                         <h3>Form your<br />investment group</h3>
                         <img
                             src="/assets/images/form-your-investment-group.png"
                             alt="decorative"
-                            className="cashback-card-img"
+                            className="investcard-card-img"
                         />
                         <p>START A GROUP WITH PEOPLE YOU TRUST AND ALIGN WITH</p>
                     </div>
-                    <div className="cashback-card">
+                    <div className="investcard-card">
                         <h4>2</h4>
                         <h3>Pick a premium<br />opportunity</h3>
                         <img
                             src="/assets/images/pick_a_premium_opportunity.png"
                             alt="decorative"
-                            className="cashback-card-img"
+                            className="investcard-card-img"
                         />
                         <p>EXPLORE CURATED INVESTMENT TAILORED TO YOUR GROUP'S GOALS AND RISK APPETITE</p>
                     </div>
-                    <div className="cashback-card">
+                    <div className="investcard-card">
                         <h4>3</h4>
                         <h3>Let us<br />set it up</h3>
                         <img
                             src="/assets/images/let-us-set-it-up.png"
                             alt="decorative"
-                            className="cashback-card-img"
+                            className="investcard-card-img"
                         />
                         <p>WE HANDLE EVERYTHING ON THE BACKEND SO YOUR GROUP CAN FOCUS ON BUILDING WEALTH, NOT PAPERWORK</p>
                     </div>
-                    <div className="cashback-card">
+                    <div className="investcard-card">
                         <h4>4</h4>
                         <h3>Track, manage<br />& profit</h3>
                         <img
                             src="/assets/images/track_manage_&_profit.png"
                             alt="decorative"
-                            className="cashback-card-img"
+                            className="investcard-card-img"
                         />
                         <p>MONITOR PERFORMANCE, PAYOUTS, AND DOCUMENTS ALL IN ONE SIMPLE DASHBOARD</p>
                     </div>
                 </div>
                 {/* </div> */}
             </section>
+            <div className="Invest-waitlist-wrapper dark-bg-section">
+                <div className="Invest-waitlist-section">
+                    <h2 className="Invest-waitlist-text">A smarter way to invest, together.</h2>
+                    <button className="Invest-waitlist-btn" onClick={() => setPopupVisible(true)}>
+                        Join Waitlist
+                    </button>
+                </div>
+
+                <WaitlistPopup isOpen={popupVisible} onClose={() => setPopupVisible(false)} />
+            </div>
+
 
         </>
     );

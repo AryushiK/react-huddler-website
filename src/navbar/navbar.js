@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './navbar.css';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import WaitlistPopup from '../components/WaitlistPopup';
 
 
@@ -12,6 +12,14 @@ function Navbar() {
         setIsMenuOpen(!isMenuOpen);
     };
     const location = useLocation();
+    const navigate = useNavigate();
+    const handleLogoClick = () => {
+        if (location.pathname === '/') {
+            window.location.reload(); // force hard reload
+        } else {
+            navigate('/');
+        }
+    };
 
     const [useWhiteLogo, setUseWhiteLogo] = useState(false);
     useEffect(() => {
@@ -55,7 +63,7 @@ function Navbar() {
     return (
         <div className="navbar-wrapper">
             {/* Logo floating left */}
-            <Link to="/" className="detached-logo">
+            <div className="detached-logo" onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
                 <img
                     src={
                         useWhiteLogo
@@ -65,7 +73,7 @@ function Navbar() {
                     alt="HUDDLER Logo"
                     className={useWhiteLogo ? 'logo-white' : 'logo-default'}
                 />
-            </Link>
+            </div>
 
             {/* Floating centered navbar bar */}
             <nav className="floating-navbar">

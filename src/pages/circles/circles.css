@@ -225,24 +225,24 @@
     margin-left: 50px;
   }
   .step-image.img-1 {
-    max-width: 230px;
-    max-height: 230px;
+    max-width: 320px;
+    max-height: 320px;
     margin-right: 70px;
     margin-left: 20px;
   }
 
   .step-image.img-3 {
-    max-width: 290px;
-    max-height: 260px;
+    max-width: 500px;
+    max-height: 350px;
     margin-right: 30px;
   }
   .step-image.img-4 {
-    max-width: 280px;
-    max-height: 260px;
+    max-width: 350px;
+    max-height: 350px;
   }
   .step-image.img-2 {
-    max-width: 230px;
-    max-height: 240px;
+    max-width: 320px;
+    max-height: 320px;
     margin-left: 15px;
     margin-right: 50px;
   }
