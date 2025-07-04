@@ -9,6 +9,7 @@
   align-items: center;
   z-index: 9999; /* make sure it's above everything */
   pointer-events: auto;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Floating logo on the left, OUTSIDE the center nav */
@@ -45,6 +46,7 @@
   gap: 28px;
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 .nav-links li a {
@@ -167,6 +169,7 @@
 }
 .join-waitlist-btn {
   position: absolute;
+  font-family: "Montserrat", sans-serif;
   right: 40px;
   background: rgba(238, 238, 240, 0.7);
   backdrop-filter: blur(12px);

@@ -2,6 +2,7 @@
   background-color: #000;
   color: #fff;
   padding: 60px 40px;
+  font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
 
@@ -12,6 +13,7 @@
 
 .invest-hero-heading h2 {
   margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
   font-size: 48px;
   font-weight: 600;
   color: #f26522;
@@ -51,6 +53,7 @@
   font-weight: 500;
   font-size: 28px;
   line-height: 100%;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 0%;
 
   color: #f26522;
@@ -441,7 +444,8 @@
   border-radius: 12px;
   margin: 1rem auto 0 auto;
   max-width: 900px;
-  margin-left: 164px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .Invest-waitlist-text {
@@ -743,6 +747,7 @@
     margin: 0 auto;
     border-radius: 10px;
     max-width: 100%;
+    margin: 1rem auto 0 auto;
     text-align: center;
   }
 

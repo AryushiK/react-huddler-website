@@ -285,15 +285,15 @@ const Home = () => {
                     </div>
                     <div className="wealth-text">
                         <p className="wealth-subtext">
-                            We take the stress out of managing money together, so you can
-                            focus on what really matters:
+                            We Tackle Health Together. We Support Each Other’s Mental Well-being.
+                            So Why Manage Money Alone?
                         </p>
                         <p className="wealth-highlight">
-                            <em>helping each other grow.</em>
+                            {/* <em>helping each other grow.</em> */}
                         </p>
                     </div>
                 </div>
-                <div className="clicky-wrapper" onClick={() => setShowPopup(true)} style={{ cursor: 'pointer' }}>
+                {/* <div className="clicky-wrapper" onClick={() => setShowPopup(true)} style={{ cursor: 'pointer' }}>
                     <video
                         src="/assets/gifs/clicky2.mp4"
                         autoPlay
@@ -303,14 +303,14 @@ const Home = () => {
                         preload="none"
                         className="clicky-video"
                     ></video>
-                </div>
+                </div> */}
                 <div className="wealth-support-text">
-                    <p>
+                    {/* <p>
                         We Tackle Health Together. We Support Each Other’s Mental
                         Well-being.
                         <br />
                         So Why Manage Money Alone?
-                    </p>
+                    </p> */}
                 </div>
                 <div className="waitlist-button">
                     <button onClick={() => setShowPopup(true)}>Join The Waitlist</button>

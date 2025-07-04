@@ -55,6 +55,7 @@
   font-weight: bold;
   margin-bottom: 1rem;
   line-height: 1.2;
+  font-family: "Montserrat", sans-serif;
 }
 
 .circles-left .highlight {
@@ -101,6 +102,7 @@
   min-width: 300px;
   font-family: "Montserrat", sans-serif;
   padding-right: 2rem;
+  text-align: justify;
 }
 
 .savings-left h2 {

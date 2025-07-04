@@ -18,7 +18,7 @@ function Aboutus() {
 
                 <div className="aboutus-header">
                     <h1 className="aboutus-title">
-                        We’re making financial growth feel less alone
+                        We’re making financial growth feel less alone.
                         {/* WE'RE MAKING FINANCIAL GROWTH FEEL LESS ALONE */}
                     </h1>
                     <p className="aboutus-description">

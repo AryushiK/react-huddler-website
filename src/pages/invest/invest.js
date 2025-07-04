@@ -260,7 +260,7 @@ function Invest() {
                             alt="decorative"
                             className="investcard-card-img"
                         />
-                        <p>START a group with people you trust and align with</p>
+                        <p>Start a group with people you trust and align with</p>
                     </div>
                     <div className="investcard-card">
                         <h4>2</h4>
@@ -270,7 +270,7 @@ function Invest() {
                             alt="decorative"
                             className="investcard-card-img"
                         />
-                        <p>EXPLORE curated investment tailored to your group's goals and risk appetite</p>
+                        <p>Explore curated investment tailored to your group's goals and risk appetite</p>
                     </div>
                     <div className="investcard-card">
                         <h4>3</h4>
@@ -280,7 +280,7 @@ function Invest() {
                             alt="decorative"
                             className="investcard-card-img"
                         />
-                        <p>WE handle everything on the backend so your group can focus on building wealth, not paperwork</p>
+                        <p>We handle everything on the backend so your group can focus on building wealth, not paperwork</p>
                     </div>
                     <div className="investcard-card">
                         <h4>4</h4>
@@ -290,7 +290,7 @@ function Invest() {
                             alt="decorative"
                             className="investcard-card-img"
                         />
-                        <p>MONITOR performance, payouts, and documents all in one simple dashboard</p>
+                        <p>Monitor performance, payouts, and documents all in one simple dashboard</p>
                     </div>
                 </div>
                 {/* </div> */}
