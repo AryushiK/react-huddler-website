@@ -9,26 +9,8 @@ function PrivacyPolicy() {
         <div className="privacy-policy-container">
             <h1 className="main-heading">Privacy Policy</h1>
 
-            <table className="info-table">
-                <tbody>
-                    <tr>
-                        <td className="icon"><AccountCircleIcon /></td>
-                        <td className="light-text"><strong>Created by</strong></td>
-                        <td className="author-name">Kunwar Sahib Singh Vohra</td>
-                    </tr>
-                    <tr>
-                        <td className="icon"><AccessTimeIcon /></td>
-                        <td className="light-text"><strong>Created time</strong></td>
-                        <td className="light-text">@July 7, 2025 3:45 PM</td>
-                    </tr>
-                    <tr>
-                        <td className="icon"><FormatListBulletedIcon /></td>
-                        <td className="light-text"><strong>Tags</strong></td>
-                        <td className="light-text">—</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h2>Privacy Policy</h2>
+
+
             <p><strong>Effective Date:</strong> 7.7.25</p>
             <p>
                 At Huddler, your privacy matters to us. This Privacy Policy outlines how we collect and use your information when you sign up for our waitlist.
