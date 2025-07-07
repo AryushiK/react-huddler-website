@@ -1,8 +1,167 @@
-/* privacyPolicy/privacypolicy.css */
+/* === BASE STYLES (Desktop ≥1081px) === */
 .privacy-policy-container {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  line-height: 1.7;
+  text-align: justify;
+  color: #1a1a1a;
+}
+.no-justify {
+  text-align: left !important;
+}
+
+.main-heading {
+  font-size: 2.1rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 30px 0 10px;
+  font-weight: 600;
+  text-align: left;
+}
+
+p {
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+ul {
+  padding-left: 20px;
+  margin: 12px 0 24px;
+}
+
+ul li {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+/* === TABLE STYLES === */
+.info-table {
+  font-family: "Montserrat", sans-serif;
+  border-collapse: collapse;
+  margin: 30px 0;
+  width: 60%;
+  border: 1px solid #ddd;
+}
+
+.info-table td {
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.icon {
+  width: 36px;
+  text-align: center;
+  padding-right: 6px;
+}
+
+.icon svg {
+  font-size: 20px;
+  color: #333;
+  vertical-align: middle;
+}
+
+.light-text {
+  color: #888;
+}
+
+.author-name {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.updated {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 30px;
+}
+
+a {
+  color: #f26522;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #d35400;
+}
+
+hr {
+  margin: 50px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+/* === TABLET: 501px - 1080px === */
+@media (min-width: 501px) and (max-width: 1080px) {
+  .privacy-policy-container {
+    padding: 30px 46px;
+  }
+
+  .main-heading {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p,
+  ul li,
+  .info-table td {
+    font-size: 14px;
+  }
+
+  .info-table {
+    width: 90%;
+  }
+
+  .icon {
+    width: 30px;
+  }
+
+  .icon svg {
+    font-size: 18px;
+  }
+}
+
+/* === MOBILE: ≤ 500px === */
+@media (max-width: 500px) {
+  .privacy-policy-container {
+    padding: 50px 32px;
+  }
+
+  .main-heading {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p,
+  ul li,
+  .info-table td {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .info-table {
+    width: 100%;
+  }
+
+  .icon {
+    width: 26px;
+  }
+
+  .icon svg {
+    font-size: 16px;
+  }
 }

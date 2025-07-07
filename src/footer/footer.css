@@ -87,6 +87,17 @@
   .footer-column {
     align-items: center;
   }
+  .footer-bottom-left {
+    position: absolute;
+    /* bottom: 0px; */
+    left: 20px;
+    font-size: 12px !important;
+    color: black;
+    margin-top: 390px !important;
+    justify-content: center !important;
+    margin-left: 100px !important;
+    margin-inline: 20px !important;
+  }
 
   .footer-column a {
     font-size: 16px;
@@ -110,4 +121,13 @@
 
 .footer-link-button:hover {
   /* text-decoration: underline; */
+}
+.footer-bottom-left {
+  position: absolute;
+  /* bottom: 0px; */
+  left: 20px;
+  font-size: 14px;
+  color: black;
+  margin-top: 170px;
+  margin-left: 210px;
 }

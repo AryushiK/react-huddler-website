@@ -134,37 +134,39 @@ function Invest() {
                         <div className="scroll-card card-one">
                             <img src="/assets/images/Group1.svg" alt="Group Icon" className="group-icon1" />
                             <p>
-                                <span className="first-line">Unlock Access to Bigger Plays</span><br />
-                                Cross high minimums together and access quality investment
-                                opportunities previously reserved for the 0.01%. You bring
-                                the group, we help you move like a fund.
+                                <span className="first-line">Opportunities Don’t Wait. Neither Should You.
+                                </span><br />
+                                The best investments usually need a lot of money. With Huddler, you can team up with people you trust to start now and diversify across opportunities to lower risk and grow smarter.
+
                             </p>
                         </div>
 
                         <div className="scroll-card card-two">
                             <img src="/assets/images/Group2.svg" alt="Group Icon" className="group-icon2" />
                             <p>
-                                <span className="first-line">Real-Time Visibility & Control</span><br />
-                                See who’s in, what’s committed, and how things are performing:
-                                All from one clean, auditable dashboard.
+                                <span className="first-line">Clarity at Every Step.</span><br />
+                                Everyone stays on the same page with real-time insights, shared visibility, and a transparent, auditable view of all your group’s investments
+
                             </p>
                         </div>
 
                         <div className="scroll-card card-three">
                             <img src="/assets/images/Group3.svg" alt="Group Icon" className="group-icon3" />
                             <p>
-                                <span className="first-line">Built-In Structure That Handles the “What Ifs”</span><br />
-                                Disagreements? Exits? Payouts? Every group gets a clear
-                                operating agreement, drafted and enforced by us.
+                                <span className="first-line">Worried About Conflicts? You Don’t Have to Be.
+                                </span><br />
+                                Life is unpredictable. If someone needs to exit early or plans change, every Huddler group has a clear legal framework ensuring peace of mind for all.
+
+
                             </p>
                         </div>
 
                         <div className="scroll-card card-three">
                             <img src="/assets/images/Group4.svg" alt="Group Icon" className="group-icon4" />
                             <p>
-                                <span className="first-line">End-to-End Infrastructure for Group Investing</span><br />
-                                We handle all the heavy lifting; SPVs, bank account setup, capital
-                                calls, KYC, tax filing, and compliance.
+                                <span className="first-line">Group investing is complex. We simplify it.
+                                </span><br />
+                                From setting up investment vehicles and bank accounts to handling KYC and taxes, we take care of it all so you can invest confidently together
                             </p>
                         </div>
 

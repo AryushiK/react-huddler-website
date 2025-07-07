@@ -54,7 +54,12 @@ function Footer() {
                         <span onClick={() => handleLinkClick('/aboutus')}>About Us</span>
                     </div>
                 </div>
+                <div className="footer-bottom-left">
+                    © 2025 Poolio Pvt. Ltd.
+                </div>
             </div>
+
+
         </footer>
     );
 }
