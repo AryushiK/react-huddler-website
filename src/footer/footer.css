@@ -131,3 +131,45 @@
   margin-top: 170px;
   margin-left: 210px;
 }
+/* Tablet only: 501px to 1080px */
+@media (min-width: 501px) and (max-width: 1080px) {
+  .footer-container {
+    height: auto;
+    padding: 40px 30px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-logo-img {
+    width: 180px;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-right: 0;
+  }
+
+  .footer-column {
+    font-size: 16px;
+    align-items: center;
+  }
+
+  .footer-column a,
+  .footer-link-button {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .footer-bottom-left {
+    position: static;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    margin-left: revert-layer;
+  }
+}

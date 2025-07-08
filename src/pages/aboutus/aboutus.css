@@ -15,6 +15,17 @@
   padding: 60px 40px;
   border-radius: 12px;
 }
+@media (min-width: 672px) and (max-width: 965px) {
+  .aboutus-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .aboutus-card:last-child {
+    grid-column: 1 / -1; /* Span full row */
+    justify-self: center; /* Center align */
+    max-width: 300px; /* Optional: limit width for symmetry */
+  }
+}
 
 /* Logo */
 /* .invest-huddler-logo-2 {

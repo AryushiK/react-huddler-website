@@ -83,7 +83,7 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .nav-links {
     display: none;
     flex-direction: column;
@@ -119,10 +119,11 @@
     padding: 5px 15px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .detached-logo {
     position: absolute;
-    left: 190px;
+    left: 50%;
+    width: 100px;
     z-index: 10;
   }
   .floating-navbar {
@@ -146,7 +147,8 @@
   }
   .join-waitlist-btn {
     position: absolute;
-    right: 270px !important;
+    left: 3%;
+    width: 130px;
     background: rgba(238, 238, 240, 0.7);
     backdrop-filter: blur(12px);
     color: black;

@@ -19,7 +19,7 @@
   text-align: left;
 }
 
-h2 {
+.main-heading h2 {
   font-size: 1.5rem;
   margin: 30px 0 10px;
   font-weight: 600;
@@ -102,7 +102,7 @@ hr {
 /* === TABLET: 501px - 1080px === */
 @media (min-width: 501px) and (max-width: 1080px) {
   .privacy-policy-container {
-    padding: 30px 46px;
+    padding: 60px 46px;
   }
 
   .main-heading {
