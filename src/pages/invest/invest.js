@@ -145,7 +145,7 @@ function Invest() {
                             <img src="/assets/images/Group2.svg" alt="Group Icon" className="group-icon2" />
                             <p>
                                 <span className="first-line">Clarity at Every Step.</span><br />
-                                Everyone stays on the same page with real-time insights, shared visibility, and a transparent, auditable view of all your group’s investments
+                                Everyone stays on the same page with real-time insights, shared visibility, and a transparent, auditable view of all your group’s investments.
 
                             </p>
                         </div>
@@ -153,7 +153,7 @@ function Invest() {
                         <div className="scroll-card card-three">
                             <img src="/assets/images/Group3.svg" alt="Group Icon" className="group-icon3" />
                             <p>
-                                <span className="first-line">Worried About Conflicts? You Don’t Have to Be.
+                                <span className="first-line">Worried About Conflicts?<br />You Don’t Have to Be.
                                 </span><br />
                                 Life is unpredictable. If someone needs to exit early or plans change, every Huddler group has a clear legal framework ensuring peace of mind for all.
 
@@ -164,9 +164,9 @@ function Invest() {
                         <div className="scroll-card card-three">
                             <img src="/assets/images/Group4.svg" alt="Group Icon" className="group-icon4" />
                             <p>
-                                <span className="first-line">Group investing is complex. We simplify it.
+                                <span className="first-line">Group investing is complex.<br /> We simplify it.
                                 </span><br />
-                                From setting up investment vehicles and bank accounts to handling KYC and taxes, we take care of it all so you can invest confidently together
+                                From setting up investment vehicles and bank accounts to handling KYC and taxes, we take care of it all so you can invest confidently together.
                             </p>
                         </div>
 

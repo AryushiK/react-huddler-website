@@ -85,7 +85,17 @@ function Navbar() {
                     <ul className={`nav-links ${isMenuOpen ? 'show' : ''}`}>
                         <li><Link to="/invest" onClick={handleLinkClick}>Invest</Link></li>
                         <li><Link to="/circles" onClick={handleLinkClick}>Circles</Link></li>
-                        <li><Link to="https://huddlerin.substack.com" onClick={handleLinkClick}>Blog</Link></li>
+                        <li>
+                            <a
+                                href="https://huddlerin.substack.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={handleLinkClick}
+                            >
+                                Blog
+                            </a>
+                        </li>
+
                         <li><Link to="/aboutus" onClick={handleLinkClick}>About Us</Link></li>
                     </ul>
                     <div className="hamburger" onClick={toggleMenu}>☰</div>
