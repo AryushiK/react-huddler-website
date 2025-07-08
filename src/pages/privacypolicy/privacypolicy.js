@@ -77,7 +77,54 @@ function PrivacyPolicy() {
                 <li>Provide accurate and valid name and email information</li>
                 <li>Agree to receive communications from Huddler regarding the product</li>
             </ul>
+            <p>
+                We reserve the right to remove anyone from the waitlist at our discretion,
+                including those who submit false or incomplete information.
+            </p>
+
+            <h2>3. No Guarantees</h2>
+            <p>Joining the waitlist does not guarantee:</p>
+            <ul>
+                <li>Access to Huddler’s platform</li>
+                <li>A specific launch date</li>
+                <li>Placement priority unless explicitly offered</li>
+            </ul>
+            <p>
+                Entry may be granted in phases, and Huddler retains the sole right to determine access timelines.
+            </p>
+
+            <h2>4. Communications & Opt-Out</h2>
+            <p>By signing up, you agree to receive:</p>
+            <ul>
+                <li>Product updates</li>
+                <li>Early access opportunities</li>
+                <li>Feedback invitations</li>
+            </ul>
+            <p>
+                You can opt out anytime by using the unsubscribe link in our emails or by
+                contacting us at <a href="mailto:huddler@support.in">huddler@support.in</a>.
+            </p>
+
+            <h2>5. Data Use</h2>
+            <p>
+                We collect only your name and email for waitlist purposes. Your data is
+                handled in accordance with our Privacy Policy, and will not be sold or shared
+                without your consent.
+            </p>
+
+            <h2>6. Modifications</h2>
+            <p>
+                We may update these terms as needed. Updates will be posted on this page
+                and take effect immediately. Continued participation implies acceptance of
+                any revised terms.
+            </p>
+
+            <h2>7. Contact</h2>
+            <p>
+                Questions? Reach out to us at: <a href="mailto:huddler@support.in">huddler@support.in</a>
+            </p>
         </div>
+
     );
 }
 
